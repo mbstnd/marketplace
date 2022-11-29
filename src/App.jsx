@@ -11,10 +11,16 @@ import Home from './views/Home.jsx'
 
 function App() {
   
+  const globalState = {}
 
   return (
     <div className="App">
-      
+      <BrowserRouter>
+        <Navbar></Navbar>
+        <Routes>
+          <Route path='/' element= { <Home/> }></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
