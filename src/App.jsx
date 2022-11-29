@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import  Context  from './context/context.js'
@@ -8,21 +10,11 @@ import Home from './views/Home.jsx'
 
 
 function App() {
-
-  const globalState = {}
-
+  
 
   return (
     <div className="App">
-      <Context.Provider value={globalState}>
-        <BrowserRouter>
-          <Navbar></Navbar>
-          <Routes>
-            <Route path="/" element={ <Home /> }></Route>
-          </Routes>
-          <Footer></Footer>
-        </BrowserRouter>
-      </Context.Provider>
+      
     </div>
   )
 }
