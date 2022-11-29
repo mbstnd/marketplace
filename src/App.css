@@ -1,0 +1,23 @@
+.main-nav {
+  background: var(--primary);
+  padding: 1.25rem 2.5%;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.main-nav a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  align-items: center;
+}
