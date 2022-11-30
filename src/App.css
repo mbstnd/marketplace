@@ -25,7 +25,7 @@
 .home-header {
   margin-top: 62px;
   width: 100%;
-  height: 45vh;
+  height: 60vh;
   background: url('https://scontent.flsc2-1.fna.fbcdn.net/v/t39.30808-6/317464378_5918121491577159_628463691469614233_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=e0qKUqEkyoMAX_rT2bv&_nc_ht=scontent.flsc2-1.fna&oh=00_AfDPa-NdaAAHh5-sN3f6ZeZiwAuBPJtrqiA8x6MW7nrvEg&oe=638AD249');
   background-size: cover;
   background-position: center;
@@ -70,3 +70,36 @@
 }
 
 /* Fin de los estilos del footer */
+
+/* Inicio de estilos Home Main */
+main .text-home {
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+.btn {
+  width: 100px;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--light);
+  border: none;
+  border-radius: 4px;
+  margin: 0 1rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+  background: var(--primary);
+}
+
+/* Fin de estilos Home Main */
