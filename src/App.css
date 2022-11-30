@@ -49,3 +49,24 @@
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
+
+/* Inicio de los estilos del Footer */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary);
+  color: var(--light);
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+.cards i {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+
+/* Fin de los estilos del footer */
