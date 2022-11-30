@@ -7,6 +7,7 @@ import reactLogo from './assets/react.svg'
 
 import Navbar from './components/Navbar.jsx'
 import Home from './views/Home.jsx'
+import Footer from './components/Footer/Footer.jsx'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path='/' element= { <Home/> }></Route>
         </Routes>
+        <Footer></Footer>
       </BrowserRouter>
     </div>
   )
