@@ -5,7 +5,11 @@ const Home = ()=> {
         <div>
             <Header></Header>
             <main>
-                <h1>contenido</h1>
+            <p className='text-home'>Somos Tritono Store, una Marketplace dedicada a la Compra y Venta de Instrumentos Musicales.</p>
+                <div className='btns'>
+                    <button className='btn btn-primary'>Comprar</button>
+                    <button className='btn btn-primary'>Vender</button>
+                </div>
             </main>
         </div>
     )
