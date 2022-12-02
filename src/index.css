@@ -18,4 +18,11 @@
 body {
   font-family: var(--font);
   background: var(--light);
+  width: 100vw;
+  height: 100hv;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  
+  
+
 }
