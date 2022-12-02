@@ -50,6 +50,13 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
+/* Estilo para nueva clase en botones de Home */
+
+.navlink-btn {
+  color: var(--light);
+  text-decoration: none;
+}
+
 /* Inicio de los estilos del Footer */
 
 .footer {
@@ -64,10 +71,16 @@
   padding: 1rem;
 }
 
+.footer p:last-child {
+  margin-right: 5rem;
+}
+
 .cards i {
   margin-left: 2rem;
   font-size: 1.5rem;
 }
+
+
 
 /* Fin de los estilos del footer */
 
