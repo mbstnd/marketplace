@@ -194,3 +194,50 @@ main .text-home {
 }
 
 /* Fin de estilos Home Main */
+
+/* Comienzo de Estilos de Registro */
+
+.main-regist {
+  width: 70%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0 0 10rem;
+}
+
+.form-regist {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-regist input {
+  margin: 0 0 1rem 0;
+  height: 2rem;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.main-regist button {
+  margin: 30px;
+  background: #24739F;
+  color: var(--light);
+  border: none;
+  height: 40px;
+  width: 200px;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Fin de Estilos de Registro*/
