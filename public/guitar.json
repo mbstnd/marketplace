@@ -1,0 +1,50 @@
+[
+    {
+    "desc": "Nunca descansamos en nuestra misión de mejorar la vida de los músicos y creamos la guitarra Jaguar de escala corta en 1962. Originalmente lanzada como nuestra guitarra eléctrica de más alta calidad y con más detalles, inspiró a los héroes del underground musical y con su ritmo a los del surf, punk y guitarristas alternativos. La Jaguar American Original de los años 60 tiene ese sonido flexible y una apariencia furtiva, ligeramente retocada para una sensación más moderna.",
+    "id": "P001",
+    "img": "https://www.fender.cl/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/g/e/ge468_0110160800v1.jpg",
+    "specifications": ["Cápsulas: S/S", "Diapasón: Palo de Rosa (Rosewood)", "Color: 3-Color Sunburst"],
+    "name": "Fender Jaguar® '60s American Original",
+    "price": 2.499990
+    },
+    {
+    "desc": "La nueva Jaguar '70s Classic Vibe de Squier lleva también la marca distintiva del modelo, como la escala de 24”, selector y controles de doble circuito, puente vibrato flotante y acabados clásicos.",
+    "id": "P002",
+    "img": "https://maneimport.com/wp-content/uploads/2021/10/70s-Jaguar.jpg",
+    "specifications": ["Cápsulas: S/S", "Diapasón: Laurel Indio (Indian Laurel)", "Color: Surf Green"],
+    "name": "Squier Jaguar® '70s Classic Vibe",
+    "price": 609.990
+    },
+    {
+    "desc": "Nacida en Corona, California, la Mustang American Performer de '24 ofrece el tono excepcional y la sensación que esperas de una Fender auténtica, junto con una sensación única y nuevas características orientadas al músico que la hacen aún más inspiradora.",
+    "id": "P003",
+    "img": "https://www.fender.cl/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/g/e/ge464_0115510372v1.jpg",
+    "specifications": ["Cápsulas: S/S", "Diapasón: Palo de Rosa (Rosewood)", "Color: Satin Sonic Blue"],
+    "name": "Fender Mustang® American Performer",
+    "price": 1.679990
+    },
+    {
+    "desc": "El sonido inspirador de una Stratocaster es uno de los fundamentos de Fender. Con este clásico sonido de agudos campanilleantes, medios pronunciados y bajos robustos, combinados con una articulación cristalina, la Stratocaster Plus Top Player está repleta de auténtico estilo y sensación Fender. Está lista para hacer realidad tus ideas musicales, es lo suficientemente versátil para cualquier estilo de música y es la plataforma perfecta para crear tu propio sonido.",
+    "id": "P004",
+    "img": "https://www.fender.cl/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/g/e/ge436_0144552531v1.jpg",
+    "specifications": ["Cápsulas: S/S/S", "Diapasón: Arce (Maple)", "Color: Aged Cherry burst"],
+    "name": "Fender Stratocaster® Plus Top Player",
+    "price": 1.299990
+    },
+    {
+    "desc": "La Stratocaster American Vintage '56 te lleva de vuelta a mediados de 1956, cuando el modelo era todavía nuevo y aparecía por primera vez el mástil posiblemente más preciado y famoso que jamás se había visto en un instrumento: un mástil grueso de una sola pieza de arce con suave forma de “V” y bordes delicadamente redondeados. Esta meticulosa búsqueda de la autenticidad se extiende hasta el golpeador blanco de una sola capa con ocho agujeros, cuerpo ligero de aliso (fresno sobre white blonde) con contornos profundos y cápsulas precisas de estilo vintage, selletas de puente, espacio para el clavijero y mucho más.",
+    "id": "P005",
+    "img": "https://www.fender.cl/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/g/e/ge227_0111502806v1.jpg",
+    "specifications": ["Cápsulas: S/S/S", "Diapasón: Arce (Maple)", "Color: Black"],
+    "name": "Fender Stratocaster® '56 American Vintage",
+    "price": 1.999990
+    },
+    {
+    "desc": "Para un tono auténtico y de estilo vintage, recreamos el trío de cápsulas Stratocaster de una sola bobina para que suenen más como las originales. Cristalinas y campanilleantes, tienen el tono nítido y articulado que puso a Fender en el mapa musical. El mástil en forma de C tiene un diapasón de pau ferro de 7.25' de radio con 21 trastes de estilo vintage para una sensación clásica. Un trémolo sincronizado de seis selletas de estilo vintage y el clavijero de estilo vintage brindan una estética original, un desempeño sólido y estabilidad de afinación.",
+    "id": "P006",
+    "img": "https://www.fender.cl/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/g/e/ge576_0149833302v1.jpg",
+    "specifications": ["Cápsulas: S/S/S", "Diapasón: Pao Ferro", "Color: Lake Placid Blue"],
+    "name": "Fender Stratocaster® '60s Road Worn® Vintera",
+    "price": 1.299990
+    }
+]
