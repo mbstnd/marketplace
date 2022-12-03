@@ -16,15 +16,20 @@
   text-decoration: none;
 }
 
+.main-nav img {
+  width: 70%;
+}
+
 .nav-icons {
   display: flex;
+  font-size: 1rem;
   justify-content: space-around;
   width: 200px;
   align-items: center;
 }
 
 .home-header {
-  margin-top: 62px;
+  margin-top: 55px;
   width: 100%;
   height: 60vh;
   background: url('https://scontent.flsc2-1.fna.fbcdn.net/v/t39.30808-6/317464378_5918121491577159_628463691469614233_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=e0qKUqEkyoMAX_rT2bv&_nc_ht=scontent.flsc2-1.fna&oh=00_AfDPa-NdaAAHh5-sN3f6ZeZiwAuBPJtrqiA8x6MW7nrvEg&oe=638AD249');
@@ -68,8 +73,12 @@
   justify-content: space-between;
   background-color: var(--primary);
   color: var(--light);
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 1rem;
+}
+
+.footer p {
+  margin-bottom: 0;
 }
 
 .footer p:last-child {
@@ -78,7 +87,7 @@
 
 .cards i {
   margin-left: 2rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 
@@ -337,3 +346,59 @@ main .text-home {
 }
 
 /* Fin de los estilos de Profile */
+
+/* Inicio de los estilos de Gallery */
+.main-gallery {
+  position: absolute;
+  height: 70vh;
+  width: 70vw;
+  top: 45%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.filter-aside {
+  
+  height: 100vh;
+  width: 20%;
+  position: relative;
+  z-index: -1;
+  background-color: #D7EAF4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  
+  font-size: 1rem;
+  width: 20%;
+  height: 50%;
+  padding: 1rem;
+}
+.main-gallery img {
+  width: 100%;
+  height: 50%;
+}
+
+.filter-aside input {
+  margin: 0 0 1rem 0;
+  height: 2rem;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn-filter {
+  margin: 30px;
+  background-color: #24739F;
+  color: var(--light);
+  border: none;
+  height: 45px;
+  width: 200px;
+  border-radius: 15px;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
