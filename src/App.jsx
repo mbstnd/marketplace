@@ -9,7 +9,10 @@ import Navbar from './components/Navbar.jsx'
 import Home from './views/Home.jsx'
 import Login from './views/Login.jsx'
 import Registration from './views/Registration.jsx'
-import Footer from './components/Footer/Footer.jsx'
+import Footer from './components/Footer.jsx'
+import Profile from './views/Profile.jsx'
+import Gallery from './views/Gallery.jsx'
+
 
 
 function App() {
@@ -24,6 +27,8 @@ function App() {
           <Route path='/' element= { <Home/> }></Route>
           <Route path='/login' element= { <Login/> }></Route>
           <Route path='/registration' element= { <Registration/> }></Route>
+          <Route path='/profile' element= { <Profile/> }></Route>
+          <Route path='/gallery' element= { <Gallery/> }></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
