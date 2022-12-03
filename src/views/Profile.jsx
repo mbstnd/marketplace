@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const Profile = () => {
     return (
         <div className="main-profile">
@@ -14,16 +16,16 @@ const Profile = () => {
                     </div>
                     <div className="profile-links">
                         <div className="link new">
-                            <i className="fa-solid fa-pen-to-square"></i>
-                            <p>Nueva publicación</p>
+                        <Link to="/publication"><i className="fa-solid fa-pen-to-square"></i></Link>
+                            
                         </div>
                         <div className="link publications">
                             <i className="fa-solid fa-bullhorn"></i>
-                            <p>Nueva publicación</p> 
+                            
                         </div>
                         <div className="link my-cart">
                             <i className="fa-solid fa-cart-shopping"></i>
-                            <p>Mis compras</p>
+                            
                         </div>
                     </div>
 
@@ -41,11 +43,7 @@ const Profile = () => {
                     <p>Pack de cuerdas</p>
                     <p>$30.000</p>
                 </div>
-                <div className="aside-product">
-                    <img src="https://cf.shopee.cl/file/eab007df844ad7715561643a3f7fbb71"></img>
-                    <p>Pack de cuerdas</p>
-                    <p>$30.000</p>
-                </div>
+                
             </aside>
         </div>
         

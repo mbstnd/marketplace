@@ -12,7 +12,7 @@ import Registration from './views/Registration.jsx'
 import Footer from './components/Footer.jsx'
 import Profile from './views/Profile.jsx'
 import Gallery from './views/Gallery.jsx'
-
+import Publication from './views/Publication.jsx'
 
 
 function App() {
@@ -29,6 +29,7 @@ function App() {
           <Route path='/registration' element= { <Registration/> }></Route>
           <Route path='/profile' element= { <Profile/> }></Route>
           <Route path='/gallery' element= { <Gallery/> }></Route>
+          <Route path='/publication' element= { <Publication/> }></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

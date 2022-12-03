@@ -402,3 +402,38 @@ main .text-home {
   font-weight: bold;
 }
 
+/* Fin de los estilos de Gallery */
+
+/* Inicio de los estilos de Publication */
+
+.main-publication {
+ 
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  position: absolute;
+  height: 70vh;
+  width: 60vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.publication-section {
+  margin-top: 2rem;
+  width: 50%;
+  border-bottom: 1px solid gray;
+}
+
+.main-publication label {
+  font-weight: bold;
+  color: #24739F;
+  margin: 0 2rem;
+}
+
+.main-publication input {
+  
+  border: none;
+  background-color: var(--light);
+}
