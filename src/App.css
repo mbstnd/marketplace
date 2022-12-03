@@ -240,3 +240,82 @@ main .text-home {
 }
 
 /* Fin de Estilos de Registro*/
+
+/* Comienzo Estilos Mi Perfil */
+
+.row {
+  margin-top: 4%;
+  height: 90vh;
+  top: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+aside {
+  flex: 30px;
+  background: #D7EAF4;
+  padding: 20px;
+}
+
+aside .image-aside img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+  margin: 2rem;
+  border: 20px solid #24739F;
+}
+
+.image-aside h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+}
+
+section {
+  flex: 70%;
+  background: var(--light);
+  padding: 30px;
+}
+
+section .main-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+
+}
+
+section .text-profile {
+  padding: 6rem;
+}
+
+section img {
+  margin: 2rem;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+section .down-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem;
+}
+
+section .down-button {
+  background: #24739F;
+  color: var(--light);
+  border: none;
+  margin: 30px;
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Fin Estilos Mi Perfil */
