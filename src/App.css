@@ -373,8 +373,8 @@ main .text-home {
 .card {
   
   font-size: 1rem;
-  width: 20%;
-  height: 50%;
+  width: 25%;
+  height: 52%;
   padding: 1rem;
 }
 .main-gallery img {
@@ -437,3 +437,32 @@ main .text-home {
   border: none;
   background-color: var(--light);
 }
+
+/* Fin de los estilos de Publication */
+
+/* Inicio de los estilos de Card */
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+}
+.card-btn {
+  
+  background-color: #24739F;
+  color: var(--light);
+  border: none;
+  height: 30px;
+  width: 30%;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.card-body {
+  height: 20px;
+}
+
+.card-title {
+  font-size: 1rem;
+}
+/* Fin de los estilos de Card */
