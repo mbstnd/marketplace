@@ -1,4 +1,10 @@
+import { useNavigate } from "react-router-dom"
+
 const Card = ({guitar}) => {
+    const navigate = useNavigate()
+
+    const viewGuitar = (id)=> navigate(`/guitar/${id}`)
+
     return (
         <div className="card m-2 " key={ guitar.id }>
             <img src={ guitar.img } className="card-img-top" alt={ guitar.name }></img> 
@@ -7,7 +13,7 @@ const Card = ({guitar}) => {
                 <p className="card-text">$ { guitar.price }</p>
             </div>
             <div className="buttons">
-                <button className="card-btn">+</button>
+                <button className="card-btn" onClick={()=> viewGuitar(guitar.id)}>+</button>
                 <button className="card-btn">🛒</button>
 
             </div>

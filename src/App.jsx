@@ -13,6 +13,7 @@ import Footer from './components/Footer.jsx'
 import Profile from './views/Profile.jsx'
 import Gallery from './views/Gallery.jsx'
 import Publication from './views/Publication.jsx'
+import Guitar from './views/Guitar.jsx'
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path='/profile' element= { <Profile/> }></Route>
           <Route path='/gallery' element= { <Gallery/> }></Route>
           <Route path='/publication' element= { <Publication/> }></Route>
+          <Route path='/guitar/:id' element= { <Guitar/> }></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

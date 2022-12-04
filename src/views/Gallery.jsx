@@ -23,14 +23,14 @@ const Gallery = () => {
     return (
         <div className="container-gallery">
         <aside className="filter-aside">
-              <input type="text"></input>
-              <button className="btn-filter">Filtrar</button>  
+            <input type="text"></input>
+            <button className="btn-filter">Filtrar</button>  
         </aside>
         <div className="container row row-cols-2 row-cols-md-2  m-4 g-4 main-gallery">
             {
                 guitars.map((guitar) => {
                     return (
-                        <Card guitar={ guitar }></Card>
+                        <Card guitar={ guitar } key={guitar.id}></Card>
                     )
                 })
             }
