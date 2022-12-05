@@ -619,3 +619,30 @@ main .text-home {
 }
 
 /* Fin estilos Carrito */
+
+/* Comienzo de estilos Payment y Not Found */
+
+.not-found,
+.payment {
+  padding-top: 9rem;
+  text-align: center;
+}
+
+.not-found h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.not-found p {
+  margin-bottom: 3rem;
+  font-size: 1.25rem;
+}
+
+
+.payment i {
+  font-size: 4rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+/* Fin de estilos Payment y Not Found */
