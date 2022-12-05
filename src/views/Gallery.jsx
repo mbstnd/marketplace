@@ -1,24 +1,14 @@
 
-import { useState, useEffect } from 'react'
+
 import Card from "../components/Card.jsx"
+import { useContext } from "react";
+import Context from "../context/context.js"
+
 
 const Gallery = () => {
-    const [guitars, setGuitars] = useState([]);
-
+    const { guitars } = useContext(Context)
     
-    useEffect(() => {
-        getGuitars("./guitar.json")
-    },[])
 
-    const getGuitars = (data) => {
-        console.log(data)
-        fetch(data)
-        .then(res => res.json())
-        .then(data => {
-            console.log(data)
-            setGuitars(data)
-        })
-    }
     
     return (
         <div className="container-gallery">

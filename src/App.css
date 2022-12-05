@@ -503,3 +503,42 @@ div .detail-guitar h4 {
 }
 
 /* Fin de estilos Detalle Guitar */
+
+/* Inicio de estilos PublicationsList */
+
+.main-publications {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   position: absolute;
+   height: 70vh;
+   width: 60vw;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.item-publication {
+  list-style-type: none;
+  border-bottom: 1px solid #24739F ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+.item-publication p {
+  margin-bottom: 0;
+}
+
+.item-publication button {
+  margin-left: 0.5rem;
+  background-color: #24739F;
+  color: var(--light);
+  border: none;
+  width: 20%;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+/* Fin de estilos PublicationsList */
