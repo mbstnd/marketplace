@@ -14,12 +14,21 @@ import Gallery from './views/Gallery.jsx'
 import Publication from './views/Publication.jsx'
 import PublicationsList from './views/PublicationsList.jsx'
 import Guitar from './views/Guitar.jsx'
+import Cart from './views/Cart.jsx'
 
 
-function App() {
-  
+function App() {  
   const [guitars, setGuitars] = useState([]);
-    const globalState = { guitars };
+  const [cart, setCart] = useState([{
+    "desc": "La nueva Jaguar '70s Classic Vibe de Squier lleva también la marca distintiva del modelo, como la escala de 24”, selector y controles de doble circuito, puente vibrato flotante y acabados clásicos.",
+    "id": "P002",
+    "img": "https://www.fender.cl/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/g/e/ge477_0374090557v1.jpg",
+    "specifications": ["Cápsulas: S/S", "Diapasón: Laurel Indio (Indian Laurel)", "Color: Surf Green"],
+    "name": "Squier Jaguar® '70s",
+    "price": 609.990
+    }]);
+
+    const globalState = { guitars, cart };
 
     
     useEffect(() => {
@@ -47,6 +56,7 @@ function App() {
             <Route path='/registration' element= { <Registration/> }></Route>
             <Route path='/profile' element= { <Profile/> }></Route>
             <Route path='/gallery' element= { <Gallery/> }></Route>
+            <Route path= '/carrito' element= { <Cart/> }></Route>
             <Route path='/publication' element= { <Publication/> }></Route>
             <Route path='/mypublications' element= { <PublicationsList/> }></Route>
             <Route path='/guitar/:id' element= { <Guitar/> }></Route>
