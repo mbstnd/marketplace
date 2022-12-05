@@ -562,3 +562,60 @@ main .text-home {
 }
 
 /* Fin de estilos Detalle Guitar */
+
+/* Comienzo estilos Carrito */
+
+.cart {
+  margin-top: 55px;
+}
+
+.cart h2 {
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.cart li {
+  padding: 1rem;
+  border-bottom: 2px solid #ccd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart li img {
+  width: 80px;
+  margin-right: 1rem;
+}
+
+.cart li .product,
+.cart li .price,
+.cart li .btns {
+  display: flex;
+  align-items: center;
+}
+
+.cart li .btn {
+  width: 30px;
+  margin: 0 1rem;
+}
+
+.cart li p {
+  width: 50px;
+  text-align: center;
+}
+
+.cart .total{
+  padding-left: 1rem;
+}
+
+.cart .total h3{
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 1rem;
+}
+
+.cart .empty-cart {
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+/* Fin estilos Carrito */

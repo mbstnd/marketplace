@@ -14,12 +14,14 @@ import Gallery from './views/Gallery.jsx'
 import Publication from './views/Publication.jsx'
 import PublicationsList from './views/PublicationsList.jsx'
 import Guitar from './views/Guitar.jsx'
+import Cart from './views/Cart.jsx'
 
 
-function App() {
-  
+function App() {  
   const [guitars, setGuitars] = useState([]);
-    const globalState = { guitars };
+  const [cart, setCart] = useState([]);
+  
+    const globalState = { guitars, cart };
 
     
     useEffect(() => {
@@ -47,6 +49,7 @@ function App() {
             <Route path='/registration' element= { <Registration/> }></Route>
             <Route path='/profile' element= { <Profile/> }></Route>
             <Route path='/gallery' element= { <Gallery/> }></Route>
+            <Route path= '/carrito' element= { <Cart/> }></Route>
             <Route path='/publication' element= { <Publication/> }></Route>
             <Route path='/mypublications' element= { <PublicationsList/> }></Route>
             <Route path='/guitar/:id' element= { <Guitar/> }></Route>
