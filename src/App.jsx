@@ -15,6 +15,8 @@ import Publication from './views/Publication.jsx'
 import PublicationsList from './views/PublicationsList.jsx'
 import Guitar from './views/Guitar.jsx'
 import Cart from './views/Cart.jsx'
+import Payment from './views/Payment.jsx'
+import NotFound from './views/Notfound.jsx'
 
 
 function App() {  
@@ -60,6 +62,8 @@ function App() {
             <Route path='/publication' element= { <Publication/> }></Route>
             <Route path='/mypublications' element= { <PublicationsList/> }></Route>
             <Route path='/guitar/:id' element= { <Guitar/> }></Route>
+            <Route path= '/pagar' element= { <Payment/> }></Route>
+            <Route path= '/*' element= { <NotFound/> }></Route>
           </Routes>
           <Footer></Footer>
         </BrowserRouter>
