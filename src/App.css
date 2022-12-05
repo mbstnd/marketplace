@@ -467,43 +467,6 @@ main .text-home {
 }
 /* Fin de los estilos de Card */
 
-/* Comienzo de estilos Detalle Guitar */
-
-div .detail-guitar {
-  padding: 1rem;
-  margin-top: 4rem;
-  border-radius: 4px;
-  box-shadow: var(--shadow);
-  flex-wrap: wrap;
-}
-
-div .detail-guitar img {
-  width: 300px;
-  height: 300px;
-  border-radius: 3rem;
-  border: 1px solid black;
-  margin: auto;
-  display: flex;
-}
-
-div .detail-guitar h1 {
-  text-align: center;
-}
-
-div .detail-guitar h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
-
-div .detail-guitar h4 {
-  padding: 1rem;
-  text-align: center;
-}
-
-/* Fin de estilos Detalle Guitar */
-
 /* Inicio de estilos PublicationsList */
 
 .main-publications {
@@ -511,12 +474,12 @@ div .detail-guitar h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-   position: absolute;
-   height: 70vh;
-   width: 60vw;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+  position: absolute;
+  height: 70vh;
+  width: 60vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .item-publication {
@@ -542,3 +505,60 @@ div .detail-guitar h4 {
   font-weight: bold;
 }
 /* Fin de estilos PublicationsList */
+
+/* Comienzo de estilos Detalle Guitar */
+
+.detail-guitar {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow);
+  border-radius: 4px;
+  margin-top: 63px;
+}
+
+.image-detail {
+  width: 40%;
+  height: 50rem;
+}
+
+.image-detail img {
+  width: 100%;
+  padding: 1rem;
+}
+
+.detail-guitar .content {
+  width: 60%;
+}
+
+.detail-guitar .content h4 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.detail-guitar .desc {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.detail-guitar h5 {
+  text-align: center;
+}
+
+.detail-guitar h3 {
+  padding: 1rem;
+} 
+
+
+.detail-guitar .price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+/* Fin de estilos Detalle Guitar */
