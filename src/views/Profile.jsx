@@ -20,7 +20,7 @@ const Profile = () => {
                             
                         </div>
                         <div className="link publications">
-                            <i className="fa-solid fa-bullhorn"></i>
+                            <Link to="/mypublications"><i className="fa-solid fa-bullhorn"></i></Link>
                             
                         </div>
                         <div className="link my-cart">
