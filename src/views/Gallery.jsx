@@ -13,6 +13,7 @@ const Gallery = () => {
     return (
         <div className="container-gallery">
         <aside className="filter-aside">
+            <p>Ingresa palabra clave</p>
             <input type="text"></input>
             <button className="btn-filter">Filtrar</button>  
         </aside>
