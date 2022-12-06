@@ -174,7 +174,7 @@ h2 {
 /* Inicio de estilos Home Main */
 main .text-home {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.30rem;
   padding: 3rem;
 }
 
@@ -189,7 +189,7 @@ main .text-home {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 .btns {
