@@ -46,6 +46,8 @@
 .home-header h1 {
   font-size: 4rem;
   margin-bottom: 2rem;
+  padding-right: 80rem;
+  color: lightgoldenrodyellow;
 }
 
 .home-header p {
