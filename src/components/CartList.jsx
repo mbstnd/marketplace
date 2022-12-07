@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { formatPrice } from '../utils/utils.js'
 
 const CartList = ({ cart })=> {
     return(
@@ -13,7 +14,7 @@ const CartList = ({ cart })=> {
                                     <h4>{ guitar.name }</h4>
                                 </div>
                                 <div className="price">
-                                    <h4>$ { guitar.price }</h4>
+                                    <h4>$ { formatPrice(guitar.price) }</h4>
                                     <div className="btns">
                                         <button className='btn btn-primary'>-</button>
                                         <h4>1</h4>
