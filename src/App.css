@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  z-index: 5;
   top: 0;
   width: 100%;
 }
@@ -15,15 +16,20 @@
   text-decoration: none;
 }
 
+.main-nav img {
+  width: 70%;
+}
+
 .nav-icons {
   display: flex;
+  font-size: 1rem;
   justify-content: space-around;
   width: 200px;
   align-items: center;
 }
 
 .home-header {
-  margin-top: 62px;
+  margin-top: 55px;
   width: 100%;
   height: 60vh;
   background: url('https://scontent.flsc2-1.fna.fbcdn.net/v/t39.30808-6/317464378_5918121491577159_628463691469614233_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=e0qKUqEkyoMAX_rT2bv&_nc_ht=scontent.flsc2-1.fna&oh=00_AfDPa-NdaAAHh5-sN3f6ZeZiwAuBPJtrqiA8x6MW7nrvEg&oe=638AD249');
@@ -40,6 +46,9 @@
 .home-header h1 {
   font-size: 4rem;
   margin-bottom: 2rem;
+  padding-right: 80rem;
+  color: lightgoldenrodyellow;
+  font-weight: bold;
 }
 
 .home-header p {
@@ -67,8 +76,12 @@
   justify-content: space-between;
   background-color: var(--primary);
   color: var(--light);
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 1rem;
+}
+
+.footer p {
+  margin-bottom: 0;
 }
 
 .footer p:last-child {
@@ -77,7 +90,7 @@
 
 .cards i {
   margin-left: 2rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 
@@ -158,13 +171,12 @@ h2 {
 }
 
 
-
 /* Fin de los estilos de Login */
 
 /* Inicio de estilos Home Main */
 main .text-home {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.30rem;
   padding: 3rem;
 }
 
@@ -179,7 +191,7 @@ main .text-home {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 .btns {
@@ -240,3 +252,405 @@ main .text-home {
 }
 
 /* Fin de Estilos de Registro*/
+
+/* Inicio de los estilos de Profile */
+
+.main-profile {
+  width: 100%;
+  height: 90%;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.profile {
+  padding: 5rem;
+  width: 85%;
+  
+}
+
+.profile-container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.profile-info {
+
+  height: 80%;
+  display: flex;
+  align-items: center;
+  
+}
+
+.avatar {
+  border-radius: 50%;
+  border: solid 3px #24739F;
+  width: 25%;
+
+}
+
+.info {
+  margin-left: 5rem;
+  font-size: 1.5rem;
+}
+
+.profile-links {
+  display: flex;
+  justify-content: space-around;
+  
+  height: 40%;
+  width: 70%;
+  display: flex;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.link i {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color:  #24739F
+}
+
+.additional-products {
+  padding: 3rem 2rem;
+  width: 20%;
+  position: relative;
+  z-index: -1;
+  background-color: #D7EAF4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.additional-products h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.aside-product {
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.additional-products img {
+  width: 70%;
+  margin: 2.5rem 0 1rem 0;
+  border: solid 3px #24739F;
+}
+
+/* Fin de los estilos de Profile */
+
+/* Inicio de los estilos de Gallery */
+.main-gallery {
+  position: absolute;
+  height: 70vh;
+  width: 70vw;
+  top: 45%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.filter-aside {
+  
+  height: 100vh;
+  width: 20%;
+  position: relative;
+  z-index: -1;
+  background-color: #D7EAF4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  
+  font-size: 1rem;
+  width: 29%;
+  height: 52%;
+  padding: 0.3rem;
+}
+.main-gallery img {
+  width: 95%;
+  height: 50%;
+}
+
+.filter-aside input {
+  margin: 0 0 1rem 0;
+  height: 2rem;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn-filter {
+  margin: 30px;
+  background-color: #24739F;
+  color: var(--light);
+  border: none;
+  height: 45px;
+  width: 200px;
+  border-radius: 15px;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Fin de los estilos de Gallery */
+
+/* Inicio de los estilos de Publication */
+
+.main-publication {
+ 
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  position: absolute;
+  height: 70vh;
+  width: 60vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.publication-section {
+  margin-top: 2rem;
+  width: 50%;
+  border-bottom: 1px solid gray;
+}
+
+.main-publication label {
+  font-weight: bold;
+  color: #24739F;
+  margin: 0 2rem;
+}
+
+.main-publication input {
+  
+  border: none;
+  background-color: var(--light);
+}
+
+/* Fin de los estilos de Publication */
+
+/* Inicio de los estilos de Card */
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+}
+.card-btn {
+  
+  background-color: #24739F;
+  color: var(--light);
+  border: none;
+  height: 30px;
+  width: 30%;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.card-body {
+  height: 20px;
+}
+
+.card-title {
+  font-size: 1rem;
+}
+/* Fin de los estilos de Card */
+
+/* Inicio de estilos PublicationsList */
+
+.main-publications {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 70vh;
+  width: 60vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item-publication {
+  list-style-type: none;
+  border-bottom: 1px solid #24739F ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+.item-publication p {
+  margin-bottom: 0;
+}
+
+.item-publication button {
+  margin-left: 0.5rem;
+  background-color: #24739F;
+  color: var(--light);
+  border: none;
+  width: 20%;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+/* Fin de estilos PublicationsList */
+
+/* Comienzo de estilos Detalle Guitar */
+
+.detail-guitar {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow);
+  border-radius: 4px;
+  margin-top: 63px;
+}
+
+.image-detail {
+  width: 40%;
+  height: 50rem;
+}
+
+.image-detail img {
+  width: 100%;
+  padding: 1rem;
+}
+
+.detail-guitar .content {
+  width: 60%;
+}
+
+.detail-guitar .content h4 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.detail-guitar .desc {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.detail-guitar h5 {
+  text-align: center;
+}
+
+.detail-guitar h3 {
+  padding: 1rem;
+} 
+
+
+.detail-guitar .price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+/* Fin de estilos Detalle Guitar */
+
+/* Comienzo estilos Carrito */
+
+.cart {
+  margin-top: 55px;
+}
+
+.cart h2 {
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.cart li {
+  padding: 1rem;
+  border-bottom: 2px solid #ccd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart li img {
+  width: 80px;
+  margin-right: 1rem;
+}
+
+.cart li .product,
+.cart li .price,
+.cart li .btns {
+  display: flex;
+  align-items: center;
+}
+
+.cart li .btn {
+  width: 30px;
+  margin: 0 1rem;
+}
+
+.cart li p {
+  width: 50px;
+  text-align: center;
+}
+
+.cart .total{
+  padding-left: 1rem;
+}
+
+.cart .total h3{
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 1rem;
+}
+
+.cart .empty-cart {
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+/* Fin estilos Carrito */
+
+/* Comienzo de estilos Payment y Not Found */
+
+.not-found,
+.payment {
+  padding-top: 9rem;
+  text-align: center;
+}
+
+.not-found h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.not-found p {
+  margin-bottom: 3rem;
+  font-size: 1.25rem;
+}
+
+
+.payment i {
+  font-size: 4rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+/* Fin de estilos Payment y Not Found */

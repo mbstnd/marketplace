@@ -10,7 +10,7 @@ const Login = () => {
                     <input type="text" placeholder=" Usuario" name="login-name"></input>
                     
                     <input type="password" placeholder=" Contraseña" name="login-password"></input>
-                    <button>Iniciar sesión</button>
+                    <button><NavLink className='navlink-btn' to="/profile">Iniciar sesión</NavLink></button>
                 </form>
             </div>
             <div className="signup-container">

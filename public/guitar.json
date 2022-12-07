@@ -4,15 +4,15 @@
     "id": "P001",
     "img": "https://www.fender.cl/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/g/e/ge468_0110160800v1.jpg",
     "specifications": ["Cápsulas: S/S", "Diapasón: Palo de Rosa (Rosewood)", "Color: 3-Color Sunburst"],
-    "name": "Fender Jaguar® '60s American Original",
+    "name": "Fender Jaguar® '60s",
     "price": 2.499990
     },
     {
     "desc": "La nueva Jaguar '70s Classic Vibe de Squier lleva también la marca distintiva del modelo, como la escala de 24”, selector y controles de doble circuito, puente vibrato flotante y acabados clásicos.",
     "id": "P002",
-    "img": "https://maneimport.com/wp-content/uploads/2021/10/70s-Jaguar.jpg",
+    "img": "https://www.fender.cl/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/g/e/ge477_0374090557v1.jpg",
     "specifications": ["Cápsulas: S/S", "Diapasón: Laurel Indio (Indian Laurel)", "Color: Surf Green"],
-    "name": "Squier Jaguar® '70s Classic Vibe",
+    "name": "Squier Jaguar® '70s",
     "price": 609.990
     },
     {
@@ -20,7 +20,7 @@
     "id": "P003",
     "img": "https://www.fender.cl/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/g/e/ge464_0115510372v1.jpg",
     "specifications": ["Cápsulas: S/S", "Diapasón: Palo de Rosa (Rosewood)", "Color: Satin Sonic Blue"],
-    "name": "Fender Mustang® American Performer",
+    "name": "Fender Mustang®",
     "price": 1.679990
     },
     {
@@ -28,7 +28,7 @@
     "id": "P004",
     "img": "https://www.fender.cl/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/g/e/ge436_0144552531v1.jpg",
     "specifications": ["Cápsulas: S/S/S", "Diapasón: Arce (Maple)", "Color: Aged Cherry burst"],
-    "name": "Fender Stratocaster® Plus Top Player",
+    "name": "Fender Stratocaster®",
     "price": 1.299990
     },
     {
@@ -36,7 +36,7 @@
     "id": "P005",
     "img": "https://www.fender.cl/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/g/e/ge227_0111502806v1.jpg",
     "specifications": ["Cápsulas: S/S/S", "Diapasón: Arce (Maple)", "Color: Black"],
-    "name": "Fender Stratocaster® '56 American Vintage",
+    "name": "Fender Stratocaster®'56",
     "price": 1.999990
     },
     {
@@ -44,7 +44,7 @@
     "id": "P006",
     "img": "https://www.fender.cl/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/g/e/ge576_0149833302v1.jpg",
     "specifications": ["Cápsulas: S/S/S", "Diapasón: Pao Ferro", "Color: Lake Placid Blue"],
-    "name": "Fender Stratocaster® '60s Road Worn® Vintera",
+    "name": "Fender Stratocaster®'60",
     "price": 1.299990
     }
 ]
