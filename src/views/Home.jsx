@@ -9,8 +9,8 @@ const Home = ()=> {
             <p className='text-home'>Somos Tritono Store, una Marketplace dedicada a la Compra y Venta de Instrumentos Musicales.</p>
                 <div className='btns'>
                 <NavLink className='btn btn-primary' to="/gallery">Comprar</NavLink> 
-                    {/* Agregue un navlink dentro del botón para navegar a la vista login  */}
-                    <button className='btn btn-primary'><NavLink className='navlink-btn' to="/login">Vender</NavLink></button> 
+                    
+                <NavLink className='btn btn-primary' to="/login">Vender</NavLink> 
                     
                 </div>
             </main>

@@ -16,15 +16,15 @@ const Profile = () => {
                     </div>
                     <div className="profile-links">
                         <div className="link new">
-                        <Link to="/publication"><i className="fa-solid fa-pen-to-square"></i></Link>
+                        <Link to="/publication"><i className="fa-solid fa-pen-to-square icon"></i></Link>
                             
                         </div>
                         <div className="link publications">
-                            <Link to="/mypublications"><i className="fa-solid fa-bullhorn"></i></Link>
+                            <Link to="/mypublications"><i className="fa-solid fa-bullhorn icon"></i></Link>
                             
                         </div>
                         <div className="link my-cart">
-                            <Link to="/carrito"><i className="fa-solid fa-cart-shopping"></i></Link>
+                            <Link to="/carrito"><i className="fa-solid fa-cart-shopping icon"></i></Link>
                             
                         </div>
                     </div>

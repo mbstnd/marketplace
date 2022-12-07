@@ -1,14 +1,10 @@
 
-
 import Card from "../components/Card.jsx"
-import { useContext } from "react";
+import { useContext } from "react"
 import Context from "../context/context.js"
-
 
 const Gallery = () => {
     const { guitars } = useContext(Context)
-    
-
     
     return (
         <div className="container-gallery">

@@ -10,12 +10,12 @@ const Login = () => {
                     <input type="text" placeholder=" Usuario" name="login-name"></input>
                     
                     <input type="password" placeholder=" Contraseña" name="login-password"></input>
-                    <button><NavLink className='navlink-btn' to="/profile">Iniciar sesión</NavLink></button>
+                    <NavLink className=' btn btn-primary' to="/profile">Iniciar sesión</NavLink>
                 </form>
             </div>
             <div className="signup-container">
                 <h2>¿No tienes cuenta?</h2>
-                <button><NavLink className='navlink-btn' to="/registration">Crear cuenta</NavLink></button>
+                <NavLink className='btn btn-primary' to="/registration">Crear cuenta</NavLink>
             </div>
         </div>
     )
