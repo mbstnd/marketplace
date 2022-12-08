@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { formatPrice } from '../utils/utils.js'
 
-const CartList = ({ cart, addToCart })=> {
+const CartList = ({ cart, addToCart, removeFromCart })=> {
     return(
         <div>
             <ul>
@@ -16,7 +16,7 @@ const CartList = ({ cart, addToCart })=> {
                                 <div className="price">
                                     <h4>$ { formatPrice(guitar.price * guitar.count) }</h4>
                                     <div className="btns">
-                                        <button className='btn btn-primary'>-</button>
+                                        <button className='btn btn-primary' onClick={()=> removeFromCart(guitar)}>-</button>
                                         <h4>{ guitar.count }</h4>
                                         <button className='btn btn-primary' onClick={()=> addToCart(guitar)}>+</button>
                                     </div>
@@ -30,7 +30,6 @@ const CartList = ({ cart, addToCart })=> {
                 <h3>Total: $0</h3>
                 <Link to="/pagar" className='btn btn-primary'>Ir a pagar</Link>
             </div>
-
         </div>
     )
 }
