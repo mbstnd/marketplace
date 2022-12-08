@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom"
 import { useContext, useState, useEffect } from "react"
+import { formatPrice } from '../utils/utils.js'
 
 import Context from "../context/context"
 
@@ -7,7 +8,7 @@ const Guitar = () => {
     const { id } = useParams()
     const { guitars } = useContext(Context)
 
-    const [ guitar, setGuitar ] = useState({})
+    const [ guitar, setGuitar ] = useState({ price: 0 })
 
     useEffect(()=> {
         const guitar = guitars.filter((item)=> item.id === id)
@@ -26,7 +27,7 @@ const Guitar = () => {
                     <h5> { guitar.specifications } </h5>
 
                     <div className="price-row">
-                        <h3>Precio: $ { guitar.price }</h3>
+                        <h3>Precio: $ { formatPrice(guitar.price) }</h3>
 
                         <button className="btn btn-primary">Añadir</button>
                     </div>
