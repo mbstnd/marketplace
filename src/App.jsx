@@ -21,17 +21,30 @@ import NotFound from './views/Notfound.jsx'
 
 function App() {  
   const [guitars, setGuitars] = useState([]);
-  const [cart, setCart] = useState([{
-    "desc": "La nueva Jaguar '70s Classic Vibe de Squier lleva también la marca distintiva del modelo, como la escala de 24”, selector y controles de doble circuito, puente vibrato flotante y acabados clásicos.",
-    "id": "P002",
-    "img": "https://www.fender.cl/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/g/e/ge477_0374090557v1.jpg",
-    "specifications": ["Cápsulas: S/S", "Diapasón: Laurel Indio (Indian Laurel)", "Color: Surf Green"],
-    "name": "Squier Jaguar® '70s",
-    "price": 609.990
-    }]);
+  const [cart, setCart] = useState([]);
 
-    const globalState = { guitars, cart };
+  const addToCart = (item)=>{
+    const itemindex = cart.findIndex((guitar)=> guitar.id === item.id)
+    const updateCart = [...cart]
 
+    console.log(addToCart)
+
+    if (itemindex === -1) {
+      const guitar = {
+        id: item.id,
+        count: 1,
+        price: item.price,
+        img: item.img,
+        name: item.name
+      }
+
+      updateCart.push(guitar)
+    } else {
+      updateCart[itemindex].count += 1
+    }
+
+    setCart(updateCart)
+  }
     
     useEffect(() => {
         getGuitars("./guitar.json")
@@ -46,6 +59,8 @@ function App() {
             setGuitars(data)
         })
     }
+
+    const globalState = { guitars, cart, addToCart };
 
   return (
     <div className="App">
