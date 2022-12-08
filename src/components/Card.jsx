@@ -1,9 +1,12 @@
 import { useNavigate } from "react-router-dom"
-
 import { formatPrice } from "../utils/utils.js"
+import { useContext } from "react"
+
+import Context from "../context/context.js"
 
 const Card = ({guitar}) => {
     const navigate = useNavigate()
+    const { addToCart } = useContext(Context)
 
     const viewGuitar = (id)=> navigate(`/guitar/${id}`)
 
@@ -16,7 +19,7 @@ const Card = ({guitar}) => {
             </div>
             <div className="buttons">
                 <button className="card-btn" onClick={()=> viewGuitar(guitar.id)}>+</button>
-                <button className="card-btn">🛒</button>
+                <button className="card-btn" onClick={()=> addToCart(guitar)}>🛒</button>
 
             </div>
         </div>

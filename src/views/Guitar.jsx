@@ -6,7 +6,7 @@ import Context from "../context/context"
 
 const Guitar = () => {
     const { id } = useParams()
-    const { guitars } = useContext(Context)
+    const { guitars, addToCart } = useContext(Context)
 
     const [ guitar, setGuitar ] = useState({ price: 0 })
 
@@ -29,7 +29,7 @@ const Guitar = () => {
                     <div className="price-row">
                         <h3>Precio: $ { formatPrice(guitar.price) }</h3>
 
-                        <button className="btn btn-primary">Añadir</button>
+                        <button className="btn btn-primary" onClick={()=> addToCart(guitar)}>Añadir</button>
                     </div>
                 </article>
             </div> 
