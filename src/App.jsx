@@ -24,12 +24,12 @@ function App() {
   const [cart, setCart] = useState([]);
 
   const addToCart = (item)=>{
-    const itemindex = cart.findIndex((guitar)=> guitar.id === item.id)
+    const itemIndex = cart.findIndex((guitar)=> guitar.id === item.id)
     const updateCart = [...cart]
 
     console.log(addToCart)
 
-    if (itemindex === -1) {
+    if (itemIndex === -1) {
       const guitar = {
         id: item.id,
         count: 1,
@@ -40,11 +40,25 @@ function App() {
 
       updateCart.push(guitar)
     } else {
-      updateCart[itemindex].count += 1
+      updateCart[itemIndex].count += 1
     }
 
     setCart(updateCart)
   }
+
+  const removeFromCart = (item)=>{
+    const itemIndex = cart.findIndex((guitar)=> guitar.id === item.id)
+    const updateCart = [...cart]
+
+    updateCart[itemIndex].count -= 1
+
+    if(updateCart[itemIndex].count <= 0) {
+      updateCart.splice(itemIndex, 1)
+    }
+
+    setCart(updateCart)
+  }
+  
     
     useEffect(() => {
         getGuitars("./guitar.json")
@@ -60,7 +74,8 @@ function App() {
         })
     }
 
-    const globalState = { guitars, cart, addToCart };
+
+    const globalState = { guitars, cart, addToCart, removeFromCart };
 
   return (
     <div className="App">
