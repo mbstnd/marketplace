@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom"
-
 import { formatPrice } from "../utils/utils.js"
 
 const Card = ({guitar}) => {

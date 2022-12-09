@@ -1,4 +1,4 @@
-
+ 
 import { useState, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
@@ -21,6 +21,8 @@ import NotFound from './views/Notfound.jsx'
 
 function App() {  
   const [guitars, setGuitars] = useState([]);
+  
+
   const [cart, setCart] = useState([{
     "desc": "La nueva Jaguar '70s Classic Vibe de Squier lleva también la marca distintiva del modelo, como la escala de 24”, selector y controles de doble circuito, puente vibrato flotante y acabados clásicos.",
     "id": "P002",
@@ -30,13 +32,14 @@ function App() {
     "price": 609.990
     }]);
 
-    const globalState = { guitars, cart };
+    const globalState = { guitars, cart};
 
     
     useEffect(() => {
         getGuitars("./guitar.json")
     },[])
 
+  
     const getGuitars = (data) => {
         console.log(data)
         fetch(data)
@@ -44,7 +47,21 @@ function App() {
         .then(data => {
             console.log(data)
             setGuitars(data)
+            
+           
         })
+    }
+
+    const capturaFiltro = (e) => {
+      e.preventDefault()
+
+      if(!e.target[0].value) 
+      return
+      const listaFiltrada = guitars.filter((guitar) => {
+        return guitar.name.toLowerCase().includes(e.target[0].value)
+      })
+      setGuitars(listaFiltrada)
+      e.target[0].value = ""
     }
 
   return (
@@ -57,7 +74,7 @@ function App() {
             <Route path='/login' element= { <Login/> }></Route>
             <Route path='/registration' element= { <Registration/> }></Route>
             <Route path='/profile' element= { <Profile/> }></Route>
-            <Route path='/gallery' element= { <Gallery/> }></Route>
+            <Route path='/gallery' element= { <Gallery filtro ={capturaFiltro}  /> } ></Route>
             <Route path= '/carrito' element= { <Cart/> }></Route>
             <Route path='/publication' element= { <Publication/> }></Route>
             <Route path='/mypublications' element= { <PublicationsList/> }></Route>

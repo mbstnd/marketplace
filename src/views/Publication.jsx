@@ -12,7 +12,6 @@ const Publication = () => {
             <label>CONDICION</label>
             <input type="radio" id="used" name="used" value="used" />
             <label for="used">Usado</label>
-
             <input type="radio" id="new" name="new" value="new" />
             <label for="new">Nuevo</label>
         </div>

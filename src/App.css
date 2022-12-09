@@ -377,7 +377,6 @@ main .text-home {
   height: 100vh;
   width: 20%;
   position: relative;
-  z-index: -1;
   background-color: #D7EAF4;
   display: flex;
   flex-direction: column;
