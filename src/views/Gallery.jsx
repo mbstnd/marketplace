@@ -5,20 +5,7 @@ import Context from "../context/context.js"
 
 const Gallery = ({filtro}) => {
     const { guitars } = useContext(Context)
-    /*const [input, setInput] = useState("");*/
 
-    /*
-
-    useEffect(() => {
-        filterData()
-    }, [input])
-
-    function filterData() {
-        const filtered = allGuitars.filter((guitar) => guitar.name === input)
-        setAllGuitars(filtered)
-        console.log(setAllGuitars)
-    }
-*/
 
     return (
         <div className="container-gallery">
