@@ -17,23 +17,54 @@ import Guitar from './views/Guitar.jsx'
 import Cart from './views/Cart.jsx'
 import Payment from './views/Payment.jsx'
 import NotFound from './views/Notfound.jsx'
-
+import { formatPrice } from './utils/utils.js'
 
 function App() {  
   const [guitars, setGuitars] = useState([]);
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (item)=>{
+    const itemIndex = cart.findIndex((guitar)=> guitar.id === item.id)
+    const updateCart = [...cart]
+
+    console.log(addToCart)
+
+    if (itemIndex === -1) {
+      const guitar = {
+        id: item.id,
+        count: 1,
+        price: item.price,
+        img: item.img,
+        name: item.name
+      }
+
+      updateCart.push(guitar)
+    } else {
+      updateCart[itemIndex].count += 1
+    }
+
+    setCart(updateCart)
+  }
+
+  const removeFromCart = (item)=>{
+    const itemIndex = cart.findIndex((guitar)=> guitar.id === item.id)
+    const updateCart = [...cart]
+
+    updateCart[itemIndex].count -= 1
+
+    if(updateCart[itemIndex].count <= 0) {
+      updateCart.splice(itemIndex, 1)
+    }
+
+    setCart(updateCart)
+  }
   
+  const cartTotal = ()=> {
+    let total = 0
+    cart.forEach((item)=> total += item.count * item.price)
 
-  const [cart, setCart] = useState([{
-    "desc": "La nueva Jaguar '70s Classic Vibe de Squier lleva también la marca distintiva del modelo, como la escala de 24”, selector y controles de doble circuito, puente vibrato flotante y acabados clásicos.",
-    "id": "P002",
-    "img": "https://www.fender.cl/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/g/e/ge477_0374090557v1.jpg",
-    "specifications": ["Cápsulas: S/S", "Diapasón: Laurel Indio (Indian Laurel)", "Color: Surf Green"],
-    "name": "Squier Jaguar® '70s",
-    "price": 609.990
-    }]);
-
-    const globalState = { guitars, cart};
-
+    return formatPrice(total)
+  }
     
     useEffect(() => {
         getGuitars("./guitar.json")
@@ -63,6 +94,8 @@ function App() {
       setGuitars(listaFiltrada)
       e.target[0].value = ""
     }
+
+    const globalState = { guitars, cart, addToCart, removeFromCart, cartTotal };
 
   return (
     <div className="App">
