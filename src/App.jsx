@@ -17,7 +17,7 @@ import Guitar from './views/Guitar.jsx'
 import Cart from './views/Cart.jsx'
 import Payment from './views/Payment.jsx'
 import NotFound from './views/Notfound.jsx'
-
+import { formatPrice } from './utils/utils.js'
 
 function App() {  
   const [guitars, setGuitars] = useState([]);
@@ -59,6 +59,12 @@ function App() {
     setCart(updateCart)
   }
   
+  const cartTotal = ()=> {
+    let total = 0
+    cart.forEach((item)=> total += item.count * item.price)
+
+    return formatPrice(total)
+  }
     
     useEffect(() => {
         getGuitars("./guitar.json")
@@ -75,7 +81,7 @@ function App() {
     }
 
 
-    const globalState = { guitars, cart, addToCart, removeFromCart };
+    const globalState = { guitars, cart, addToCart, removeFromCart, cartTotal };
 
   return (
     <div className="App">
