@@ -429,6 +429,12 @@ main .text-home {
   background-color: #0D6EFD;
 }
 
+.filtro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Fin de los estilos de Gallery */
 
 /* Inicio de los estilos de Publication */
