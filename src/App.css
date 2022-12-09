@@ -358,7 +358,8 @@ main .text-home {
 .additional-products img {
   width: 70%;
   margin: 2.5rem 0 1rem 0;
-  border: solid 3px #24739F;
+  border: solid 10px #24739F;
+  border-radius: 2rem;
 }
 
 .icon:hover {
