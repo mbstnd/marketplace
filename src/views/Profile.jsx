@@ -17,15 +17,15 @@ const Profile = () => {
                     <div className="profile-links">
                         <div className="link new">
                         <Link to="/publication"><i className="fa-solid fa-pen-to-square icon"></i></Link>
-                            
+                            <h5>Haz tu Venta</h5>
                         </div>
                         <div className="link publications">
                             <Link to="/mypublications"><i className="fa-solid fa-bullhorn icon"></i></Link>
-                            
+                            <h5>Mis Publicaciones</h5>
                         </div>
                         <div className="link my-cart">
                             <Link to="/carrito"><i className="fa-solid fa-cart-shopping icon"></i></Link>
-                            
+                                <h5>Accede al Carrito</h5>
                         </div>
                     </div>
 
@@ -36,12 +36,12 @@ const Profile = () => {
                 <div className="aside-product">
                     <img src="https://http2.mlstatic.com/D_NQ_NP_785862-MLC47757592647_102021-O.jpg"></img>
                     <p>Juego de uñetas</p>
-                    <p>$15.000</p>
+                    <p>$8.000</p>
                 </div>
                 <div className="aside-product">
                     <img src="https://cf.shopee.cl/file/eab007df844ad7715561643a3f7fbb71"></img>
                     <p>Pack de cuerdas</p>
-                    <p>$30.000</p>
+                    <p>$19.980</p>
                 </div>
                 
             </aside>

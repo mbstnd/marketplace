@@ -50,11 +50,13 @@
 }
 
 .home-header h1 {
-  font-size: 4rem;
+  font-size: 55px;
   margin-bottom: 2rem;
   padding-right: 80rem;
   color: lightgoldenrodyellow;
-  font-weight: bold;
+  font-weight: 900;
+  text-shadow: 2px 5px #000;
+  text-transform: uppercase;
 }
 
 .home-header p {
