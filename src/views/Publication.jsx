@@ -47,7 +47,7 @@ const Publication = () => {
 
     return (
     <div className="main-publication">
-        <h3>Llene el siguiente formulario:</h3>
+        <h3>Completa el siguiente formulario:</h3>
         <div className="publication-section">
             <form>NOMBRE</form>
             <input type="text" placeholder="Nombre del Vendedor" onChange={(e)=> handlenombre(e)}></input>
