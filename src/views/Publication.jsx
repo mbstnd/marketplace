@@ -66,7 +66,7 @@ const Publication = () => {
             <input type="text" placeholder="Indica el Modelo" onChange={(e)=> handlemodelo(e)}></input>
         </div>
         <div className="publication-section">
-            <form>DESCRIPCION</form>
+            <form>DESCRIPCIÓN</form>
             <input type="text" placeholder="Agrega una Descripción" onChange={(e)=> handledescripcion(e)}></input>
         </div>
         <button className="btn-filter" onClick={()=> handleEnviar()}>Publicar</button>
