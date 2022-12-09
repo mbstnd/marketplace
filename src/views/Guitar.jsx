@@ -27,7 +27,7 @@ const Guitar = () => {
                     <h5> { guitar.specifications } </h5>
 
                     <div className="price-row">
-                        <h3>Precio: $ { formatPrice(guitar.price) }</h3>
+                        <h3 className="texdetail-price">Precio: $ { formatPrice(guitar.price) }</h3>
 
                         <button className="btn btn-primary" onClick={()=> addToCart(guitar)}>Añadir</button>
                     </div>

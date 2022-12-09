@@ -26,7 +26,12 @@
   justify-content: space-around;
   width: 200px;
   align-items: center;
-  gap: 25px;
+  gap: 16px;
+}
+
+.nav-icons i{
+  display: flex;
+  gap: 5px;
 }
 
 .home-header {
@@ -574,6 +579,11 @@ main .text-home {
   padding: 1rem;
 } 
 
+.detail-guitar .texdetail-price {
+  font-size: 23px;
+  font-weight: bold;
+
+}
 
 .detail-guitar .price-row {
   display: flex;
