@@ -442,6 +442,8 @@ main .text-home {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: 1.30rem solid var(--primary);
+  border-radius: 2rem;
 }
 
 .publication-section {
@@ -450,10 +452,9 @@ main .text-home {
   border-bottom: 1px solid gray;
 }
 
-.main-publication label {
+.main-publication form {
   font-weight: bold;
-  color: #24739F;
-  margin: 0 2rem;
+  text-align: left;
 }
 
 .main-publication input {
