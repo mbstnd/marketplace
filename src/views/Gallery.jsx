@@ -1,6 +1,5 @@
-
+import { useContext } from "react"
 import Card from "../components/Card.jsx"
-import { useContext, useState, useEffect } from "react"
 import Context from "../context/context.js"
 
 const Gallery = ({filtro}) => {
@@ -10,8 +9,7 @@ const Gallery = ({filtro}) => {
     return (
         <div className="container-gallery">
         <aside className="filter-aside">
-            <form className="filtro" onSubmit={(e) => filtro(e)}>
-                
+            <form className="filtro" onSubmit={(e) => filtro(e)}>    
                 <input type="text" placeholder=" Buscar" name="filtro"  ></input>
                 <button className="btn-filter" >Filtrar</button>
             </form>  

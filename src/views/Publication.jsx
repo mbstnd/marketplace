@@ -39,11 +39,6 @@ const Publication = () => {
         console.log (data)
     }
 
-    // const agregarProducto = (e)=> {
-    //     e.preventDefault()
-
-    // }
-
 
     return (
     <div className="main-publication">
