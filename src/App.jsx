@@ -21,6 +21,10 @@ import { formatPrice } from './utils/utils.js'
 
 function App() {  
   const [guitars, setGuitars] = useState([]);
+  const [allGuitars, setAllGuitars] = useState([]);
+  const [searchedItem, setSearchedItem] = useState("")
+  const [sortOrder, setSortedOrder] = useState("")
+  const [prices, setPrices] = useState([])
   const [cart, setCart] = useState([]);
 
   const addToCart = (item)=>{
@@ -70,32 +74,71 @@ function App() {
         getGuitars("./guitar.json")
     },[])
 
+   
   
     const getGuitars = (data) => {
-        console.log(data)
+        
         fetch(data)
         .then(res => res.json())
         .then(data => {
             console.log(data)
             setGuitars(data)
+           setAllGuitars(data)
             
-           
         })
+
+        
     }
 
-    const capturaFiltro = (e) => {
-      e.preventDefault()
+    function onSearch(e) {
+     
+    setSearchedItem(e)
+    
+    const searchedGuitar = allGuitars.filter((guitar) => {
+      return guitar.name.toLowerCase().includes(searchedItem.toLowerCase())})
+      setGuitars(searchedGuitar)
+      
+}
 
-      if(!e.target[0].value) 
-      return
-      const listaFiltrada = guitars.filter((guitar) => {
-        return guitar.name.toLowerCase().includes(e.target[0].value)
-      })
-      setGuitars(listaFiltrada)
-      e.target[0].value = ""
-    }
+function sort(e) {
 
-    const globalState = { guitars, cart, addToCart, removeFromCart, cartTotal };
+setSortedOrder(e)
+
+const setOrder = (guitars) => {
+  if(e.target.value === "asc"){
+      console.log("ascendente")
+
+     /* guitars.price.sort((a,b) => a - b)*/
+      
+  } else {
+      guitars.price.sort((a,b) => b - a)
+  }
+   return guitars(setOrder)
+} }
+
+ 
+
+
+/*
+const sort = (e) => {
+  if( e.target.value === 1){
+const sortAscPrices = [...prices]
+sortAscPrices.sort((a, b) => a - b)    
+setPrices( sortAscPrices )}
+else if(e.target.value === 2){
+  const sortDescPrices = [...prices]
+  sortDescPrices.sort((a, b) => a - b).reverse()
+  setPrices( sortDescPrices )
+} else (console.log(e.target.value))
+} */
+
+  
+
+
+    
+    
+
+    const globalState = { guitars, setGuitars, cart, addToCart, removeFromCart, cartTotal };
 
   return (
     <div className="App">
@@ -107,7 +150,7 @@ function App() {
             <Route path='/login' element= { <Login/> }></Route>
             <Route path='/registration' element= { <Registration/> }></Route>
             <Route path='/profile' element= { <Profile/> }></Route>
-            <Route path='/gallery' element= { <Gallery filtro ={capturaFiltro}  /> } ></Route>
+            <Route path='/gallery' element= { <Gallery searchedItem ={searchedItem} onSearch={onSearch} sort={sort} sortOrder={sortOrder}/> } ></Route>
             <Route path= '/carrito' element= { <Cart/> }></Route>
             <Route path='/publication' element= { <Publication/> }></Route>
             <Route path='/mypublications' element= { <PublicationsList/> }></Route>
