@@ -19,6 +19,9 @@ import NotFound from './views/Notfound.jsx'
 
 function App() {  
   const [guitars, setGuitars] = useState([]);
+  const [allGuitars, setAllGuitars] = useState([]);
+  const [searchedItem, setSearchedItem] = useState("")
+  const [prices, setPrices] = useState([])
   const [cart, setCart] = useState([]);
 
   const addToCart = (item)=>{
@@ -68,30 +71,33 @@ function App() {
         getGuitars("./guitar.json")
     },[])
 
+   
   
     const getGuitars = (data) => {
-        console.log(data)
+        
         fetch(data)
         .then(res => res.json())
         .then(data => {
             console.log(data)
             setGuitars(data)
+           setAllGuitars(data)
+            
         })
+
+        
     }
 
-    const capturaFiltro = (e) => {
-      e.preventDefault()
+    function onSearch(e) {
+     
+    setSearchedItem(e)
+    
+    const searchedGuitar = allGuitars.filter((guitar) => {
+      return guitar.name.toLowerCase().includes(searchedItem.toLowerCase())})
+      setGuitars(searchedGuitar)
+      
+}
 
-      if(!e.target[0].value) 
-      return
-      const listaFiltrada = guitars.filter((guitar) => {
-        return guitar.name.toLowerCase().includes(e.target[0].value)
-      })
-      setGuitars(listaFiltrada)
-      e.target[0].value = ""
-    }
-
-    const globalState = { guitars, cart, addToCart, removeFromCart, cartTotal };
+    const globalState = { guitars, setGuitars, cart, addToCart, removeFromCart, cartTotal };
 
   return (
     <div className="App">
@@ -102,7 +108,7 @@ function App() {
             <Route path='/' element= { <Home/> }></Route>
             <Route path='/login' element= { <Login/> }></Route>
             <Route path='/profile' element= { <Profile/> }></Route>
-            <Route path='/gallery' element= { <Gallery filtro ={capturaFiltro}  /> } ></Route>
+            <Route path='/gallery' element= { <Gallery searchedItem ={searchedItem} onSearch={onSearch}/> } ></Route>
             <Route path= '/carrito' element= { <Cart/> }></Route>
             <Route path='/publication' element= { <Publication/> }></Route>
             <Route path='/mypublications' element= { <PublicationsList/> }></Route>

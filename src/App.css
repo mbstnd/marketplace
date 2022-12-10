@@ -350,6 +350,15 @@ main .text-home {
   border-radius: 5px;
   border: 1px solid gray;
 }
+
+.filter-aside select {
+  margin: 0 0 1rem 0;
+  height: 2rem;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
 .btn-filter {
   margin: 30px;
   background-color: #24739F;
@@ -372,6 +381,7 @@ main .text-home {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 /* Fin de los estilos de Gallery */
