@@ -28,7 +28,6 @@ const Profile = () => {
                                 <h5>Accede al Carrito</h5>
                         </div>
                     </div>
-
                 </div>
             </div>
             <aside className="additional-products">
@@ -42,8 +41,7 @@ const Profile = () => {
                     <img src="https://cf.shopee.cl/file/eab007df844ad7715561643a3f7fbb71"></img>
                     <p>Pack de cuerdas</p>
                     <p>$19.980</p>
-                </div>
-                
+                </div>  
             </aside>
         </div>
         

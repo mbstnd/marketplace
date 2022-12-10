@@ -1,14 +1,14 @@
- 
 import { useState, useEffect } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { formatPrice } from './utils/utils.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import  Context  from './context/context.js'
 import Navbar from './components/Navbar.jsx'
+import Footer from './components/Footer.jsx'
 import Home from './views/Home.jsx'
 import Login from './views/Login.jsx'
 import Registration from './views/Registration.jsx'
-import Footer from './components/Footer.jsx'
 import Profile from './views/Profile.jsx'
 import Gallery from './views/Gallery.jsx'
 import Publication from './views/Publication.jsx'
@@ -17,7 +17,6 @@ import Guitar from './views/Guitar.jsx'
 import Cart from './views/Cart.jsx'
 import Payment from './views/Payment.jsx'
 import NotFound from './views/Notfound.jsx'
-import { formatPrice } from './utils/utils.js'
 
 function App() {  
   const [guitars, setGuitars] = useState([]);
@@ -78,8 +77,6 @@ function App() {
         .then(data => {
             console.log(data)
             setGuitars(data)
-            
-           
         })
     }
 

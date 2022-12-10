@@ -1,9 +1,4 @@
-
-
 const PublicationsList = () => {
-
-    
-
     return (
     <div className="main-publications">
         <ul>
@@ -11,9 +6,6 @@ const PublicationsList = () => {
                 <p>🎸 | Rikenbacker 325 | 12-11-2022</p><button>Ver</button>
             </li>
         </ul>  
-        
-        
-    
     </div>
     )
 }
