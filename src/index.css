@@ -33,26 +33,26 @@ body {
   margin: 0 1rem;
   display: inline-block;
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 1rem;
 }
 
-.btntwo{
-  width: 100px;
+.btntwo {
   padding: 0.5rem;
   cursor: pointer;
   color: var(--light);
   border: 2px;
   border-radius: 4px;
-  margin: 0 1rem;
-  display: inline-block;
+  margin: 0 0 0.25rem;
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 1rem;
   text-decoration: none;
 }
+
 .btns {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 50px;
 }
 
 .btn-primary {
