@@ -27,6 +27,7 @@
   width: 200px;
   align-items: center;
   gap: 16px;
+  font-weight: bold;
 }
 
 .nav-icons i{
@@ -195,6 +196,7 @@ main .text-home {
   text-align: center;
   font-size: 1.50rem;
   padding: 3rem;
+  font-weight: 900;
 }
 
 /* Fin de estilos Home Main */
