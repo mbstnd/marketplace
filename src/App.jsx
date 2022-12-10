@@ -1,14 +1,13 @@
- 
 import { useState, useEffect } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { formatPrice } from './utils/utils.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import  Context  from './context/context.js'
 import Navbar from './components/Navbar.jsx'
+import Footer from './components/Footer.jsx'
 import Home from './views/Home.jsx'
 import Login from './views/Login.jsx'
-import Registration from './views/Registration.jsx'
-import Footer from './components/Footer.jsx'
 import Profile from './views/Profile.jsx'
 import Gallery from './views/Gallery.jsx'
 import Publication from './views/Publication.jsx'
@@ -17,13 +16,11 @@ import Guitar from './views/Guitar.jsx'
 import Cart from './views/Cart.jsx'
 import Payment from './views/Payment.jsx'
 import NotFound from './views/Notfound.jsx'
-import { formatPrice } from './utils/utils.js'
 
 function App() {  
   const [guitars, setGuitars] = useState([]);
   const [allGuitars, setAllGuitars] = useState([]);
   const [searchedItem, setSearchedItem] = useState("")
-  const [sortOrder, setSortedOrder] = useState("")
   const [prices, setPrices] = useState([])
   const [cart, setCart] = useState([]);
 
@@ -100,44 +97,6 @@ function App() {
       
 }
 
-function sort(e) {
-
-setSortedOrder(e)
-
-const setOrder = (guitars) => {
-  if(e.target.value === "asc"){
-      console.log("ascendente")
-
-     /* guitars.price.sort((a,b) => a - b)*/
-      
-  } else {
-      guitars.price.sort((a,b) => b - a)
-  }
-   return guitars(setOrder)
-} }
-
- 
-
-
-/*
-const sort = (e) => {
-  if( e.target.value === 1){
-const sortAscPrices = [...prices]
-sortAscPrices.sort((a, b) => a - b)    
-setPrices( sortAscPrices )}
-else if(e.target.value === 2){
-  const sortDescPrices = [...prices]
-  sortDescPrices.sort((a, b) => a - b).reverse()
-  setPrices( sortDescPrices )
-} else (console.log(e.target.value))
-} */
-
-  
-
-
-    
-    
-
     const globalState = { guitars, setGuitars, cart, addToCart, removeFromCart, cartTotal };
 
   return (
@@ -148,9 +107,8 @@ else if(e.target.value === 2){
           <Routes>
             <Route path='/' element= { <Home/> }></Route>
             <Route path='/login' element= { <Login/> }></Route>
-            <Route path='/registration' element= { <Registration/> }></Route>
             <Route path='/profile' element= { <Profile/> }></Route>
-            <Route path='/gallery' element= { <Gallery searchedItem ={searchedItem} onSearch={onSearch} sort={sort} sortOrder={sortOrder}/> } ></Route>
+            <Route path='/gallery' element= { <Gallery searchedItem ={searchedItem} onSearch={onSearch}/> } ></Route>
             <Route path= '/carrito' element= { <Cart/> }></Route>
             <Route path='/publication' element= { <Publication/> }></Route>
             <Route path='/mypublications' element= { <PublicationsList/> }></Route>

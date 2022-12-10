@@ -1,7 +1,6 @@
-import { useParams } from "react-router-dom"
 import { useContext, useState, useEffect } from "react"
+import { useParams } from "react-router-dom"
 import { formatPrice } from '../utils/utils.js'
-
 import Context from "../context/context"
 
 const Guitar = () => {
@@ -25,10 +24,8 @@ const Guitar = () => {
                     <h4>{ guitar.name }</h4>
                     <h5 className="desc">{ guitar.desc }</h5>
                     <h5> { guitar.specifications } </h5>
-
                     <div className="price-row">
                         <h3 className="texdetail-price">Precio: $ { formatPrice(guitar.price) }</h3>
-
                         <button className="btn btn-primary" onClick={()=> addToCart(guitar)}>Añadir</button>
                     </div>
                 </article>

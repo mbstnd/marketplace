@@ -1,6 +1,5 @@
-
+import { useContext } from "react"
 import Card from "../components/Card.jsx"
-import { useContext} from "react"
 import Context from "../context/context.js"
 
 const Gallery = ({searchedItem, onSearch, sort, sortOrder}) => {
