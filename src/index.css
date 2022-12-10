@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 :root {
 
   --primary: #0E5E6F;
   --secundary: ;
   --dark:#242424;
   --light: #efefef;
-  --font: 'Roboto Mono', monospace;
+  --font: 'Montserrat', sans-serif;
   --shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -21,8 +21,40 @@ body {
   width: 100vw;
   height: 100hv;
   overflow-x: hidden;
-  
-  
-  
+}
 
+.btn {
+  width: 100px;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--light);
+  border: 2px;
+  border-radius: 4px;
+  margin: 0 1rem;
+  display: inline-block;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.btntwo {
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--light);
+  border: 2px;
+  border-radius: 4px;
+  margin: 0 0 0.25rem;
+  text-align: center;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.btn-primary {
+  background: var(--primary);
 }
