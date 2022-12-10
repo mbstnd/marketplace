@@ -109,30 +109,30 @@
 
 h2 {
   text-align: center;
+  font-weight: 900;
   
 }
 .main-login {
-  width: 70%;
-  height: 60%;
+  width: 40%;
+  height: 50%;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
-  
+  border-radius: 2rem;
+  border: 1rem solid var(--primary);
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
 }
 
 .login-container {
   padding:  0 5rem;
-  height: 80%;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-right: 1px solid #0E5E6F;
-  
   width: 100%;
 }
 
@@ -152,17 +152,9 @@ h2 {
 .login-form input {
   margin: 0 0 1rem 0;
   height: 2rem;
-  width: 70%;
+  width: 40%;
   border-radius: 5px;
   border: 1px solid gray;
-}
-
-.signup-container {
-  padding: 5rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .btn-login {
@@ -190,29 +182,6 @@ main .text-home {
   padding: 3rem;
 }
 
-.btn {
-  width: 100px;
-  padding: 0.5rem;
-  cursor: pointer;
-  color: var(--light);
-  border: none;
-  border-radius: 4px;
-  margin: 0 1rem;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  font-size: 0.85rem;
-}
-
-.btns {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn-primary {
-  background: var(--primary);
-}
 
 /* Fin de estilos Home Main */
 

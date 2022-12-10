@@ -8,7 +8,6 @@ import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import Home from './views/Home.jsx'
 import Login from './views/Login.jsx'
-import Registration from './views/Registration.jsx'
 import Profile from './views/Profile.jsx'
 import Gallery from './views/Gallery.jsx'
 import Publication from './views/Publication.jsx'
@@ -102,7 +101,6 @@ function App() {
           <Routes>
             <Route path='/' element= { <Home/> }></Route>
             <Route path='/login' element= { <Login/> }></Route>
-            <Route path='/registration' element= { <Registration/> }></Route>
             <Route path='/profile' element= { <Profile/> }></Route>
             <Route path='/gallery' element= { <Gallery filtro ={capturaFiltro}  /> } ></Route>
             <Route path= '/carrito' element= { <Cart/> }></Route>
