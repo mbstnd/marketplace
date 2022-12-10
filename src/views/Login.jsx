@@ -8,7 +8,7 @@ const Login = () => {
                 <form className="login-form">
                     <input type="text" placeholder=" Usuario" name="login-name"></input>
                     <input type="password" placeholder=" Contraseña" name="login-password"></input>
-                    <NavLink className='btn btn-primary' to="/profile">Inicia sesión</NavLink>
+                    <NavLink className='btn btn-primary' to="/profile">Iniciar sesión</NavLink>
                 </form>
             </div>
         </div>
