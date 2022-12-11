@@ -130,6 +130,8 @@ h2 {
 
 .main-login h2 {
   color: var(--light);
+  padding: 0;
+  text-align: center;
 }
 
 .login-container {
@@ -167,7 +169,7 @@ h2 {
 .login-form input {
   margin: 0 0 2rem 0;
   height: 2rem;
-  width: 40%;
+  width: 35%;
   border-radius: 5px;
   border: 1px solid gray;
 }
@@ -416,7 +418,7 @@ main .text-home {
 }
 
 .main-publication input {
-  
+  width: 100%;
   border: none;
   background-color: var(--light);
 }
