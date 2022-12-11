@@ -406,13 +406,21 @@ main .text-home {
   box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
 }
 
+.publication-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .publication-section {
   margin-top: 2rem;
   width: 50%;
   border-bottom: 1px solid gray;
 }
 
-.main-publication form {
+.main-publication label {
   font-weight: bold;
   text-align: left;
 }

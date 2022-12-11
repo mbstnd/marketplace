@@ -22,6 +22,7 @@ function App() {
   const [allGuitars, setAllGuitars] = useState([]);
   const [searchedItem, setSearchedItem] = useState("")
   const [sortOrder, setSortOrder] = useState("")
+  const [publicaciones, setPublicaciones] = useState([]);
   const [prices, setPrices] = useState([])
   const [cart, setCart] = useState([]);
 
@@ -98,6 +99,27 @@ function App() {
       
 }
 
+const capturaInput = (e) => {
+  e.preventDefault()
+  if(!e.target[0].value || !e.target[1].value || !e.target[2].value || !e.target[3].value)
+  return
+  const nuevaPublicacion = {
+    id: publicaciones.length+1,
+    nombre: e.target[0].value,
+    status: e.target[1].value,
+    price: e.target[2].value,
+    model: e.target[3].value,
+  }
+
+  const publicacionesAct = [...publicaciones, nuevaPublicacion]
+  setPublicaciones(publicacionesAct)
+
+  e.target[0].value = ""
+  e.target[1].value = ""
+  e.target[2].value = ""
+  e.target[3].value = ""
+}
+
 
 
 function onSort(e) {
@@ -113,7 +135,7 @@ function onSort(e) {
 
 
 
-    const globalState = { guitars, setGuitars, cart, addToCart, removeFromCart, cartTotal };
+    const globalState = { guitars, setGuitars, cart, addToCart, removeFromCart, cartTotal, publicaciones };
 
   return (
     <div className="App">
@@ -126,7 +148,7 @@ function onSort(e) {
             <Route path='/profile' element= { <Profile/> }></Route>
             <Route path='/gallery' element= { <Gallery searchedItem ={searchedItem} onSearch={onSearch} onSort={onSort} sortOrder={sortOrder}/> } ></Route>
             <Route path= '/carrito' element= { <Cart/> }></Route>
-            <Route path='/publication' element= { <Publication/> }></Route>
+            <Route path='/publication' element= { <Publication submit={capturaInput}/> }></Route>
             <Route path='/mypublications' element= { <PublicationsList/> }></Route>
             <Route path='/guitar/:id' element= { <Guitar/> }></Route>
             <Route path= '/pagar' element= { <Payment/> }></Route>
