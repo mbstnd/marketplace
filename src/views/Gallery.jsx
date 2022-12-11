@@ -10,7 +10,7 @@ const Gallery = ({searchedItem, onSearch, onSort, sortOrder}) => {
         <aside className="filter-aside">
            
                 <div className="filtro" >
-                <input type="text" placeholder=" Filtra" value={searchedItem} onChange={e => onSearch(e.target.value)}  ></input>
+                <input type="text" placeholder=" Filtra" value={searchedItem} onChange={e => onSearch(e.target.value)} ></input>
                 <button className="btn-filter">Filtra</button>
                 </div>
                 <div className="filtro"  >
