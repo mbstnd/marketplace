@@ -7,25 +7,6 @@ const Publication = () => {
     const [modelo, setModelo ] = useState("")
     const [descripcion, setDescripcion ] = useState("")
 
-    const handlenombre = (e)=> {
-        setNombre(e.target.value)
-    }
-
-    const handlecondicion = (e)=> {
-        setCondicion(e.target.value)
-    }
-
-    const handleprecio = (e)=> {
-        setPrecio(e.target.value)
-    }
-
-    const handlemodelo = (e)=>{
-        setModelo(e.target.value)
-    }
-
-    const handledescripcion = (e)=> {
-        setDescripcion(e.target.value)
-    }
 
     const handleEnviar = ()=> {
         const data = 
@@ -45,24 +26,24 @@ const Publication = () => {
         <h3>Completa el siguiente formulario:</h3>
         <div className="publication-section">
             <form>NOMBRE</form>
-            <input type="text" placeholder="Nombre del Vendedor" onChange={(e)=> handlenombre(e)}></input>
+            <input type="text" placeholder="Nombre del Vendedor" onChange={(e)=> setNombre(e.target.value)}></input>
         </div>
         <div className="publication-section">
             <form>ESTADO DEL PRODUCTO</form>
-            <input type="text" placeholder="Estado del Instrumento" onChange={(e)=> handlecondicion(e)} />
+            <input type="text" placeholder="Estado del Instrumento" onChange={(e)=> setCondicion(e.target.value)} />
 
         </div>
         <div className="publication-section">
             <form>PRECIO</form>
-            <input type="text" placeholder="Precio del Producto" onChange={(e)=> handleprecio(e)}></input>
+            <input type="text" placeholder="Precio del Producto" onChange={(e)=> setPrecio(e.target.value)}></input>
         </div>
         <div className="publication-section">
             <form>MODELO</form>
-            <input type="text" placeholder="Indica el Modelo" onChange={(e)=> handlemodelo(e)}></input>
+            <input type="text" placeholder="Indica el Modelo" onChange={(e)=> setModelo(e.target.value)}></input>
         </div>
         <div className="publication-section">
             <form>DESCRIPCIÓN</form>
-            <input type="text" placeholder="Agrega una Descripción" onChange={(e)=> handledescripcion(e)}></input>
+            <input type="text" placeholder="Agrega una Descripción" onChange={(e)=> setDescripcion(e.target.value)}></input>
         </div>
         <button className="btn-filter" onClick={()=> handleEnviar()}>Publicar</button>
     </div>
