@@ -2,15 +2,8 @@ import { useContext } from "react"
 import Card from "../components/Card.jsx"
 import Context from "../context/context.js"
 
-const Gallery = ({searchedItem, onSearch, sort, sortOrder}) => {
+const Gallery = ({searchedItem, onSearch, onSort, sortOrder}) => {
     const { guitars } = useContext(Context)
-
-    
-
-   
-
-
-
 
     return (
         <div className="container-gallery">
@@ -21,7 +14,7 @@ const Gallery = ({searchedItem, onSearch, sort, sortOrder}) => {
                 <button className="btn-filter">Filtra</button>
                 </div>
                 <div className="filtro"  >
-                <select value={sortOrder} onChange={e => sort(e.target.value)} >
+                <select value ={sortOrder} onChange={e => onSort(e.target.value)} >
                     <option value="0">Ordena</option>
                     <option value="asc">Menor precio</option>
                     <option value="desc">Mayor precio</option>

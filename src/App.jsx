@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, isRouteErrorResponse } from 'react-router-dom'
 import { formatPrice } from './utils/utils.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
@@ -21,6 +21,7 @@ function App() {
   const [guitars, setGuitars] = useState([]);
   const [allGuitars, setAllGuitars] = useState([]);
   const [searchedItem, setSearchedItem] = useState("")
+  const [sortOrder, setSortOrder] = useState("")
   const [prices, setPrices] = useState([])
   const [cart, setCart] = useState([]);
 
@@ -97,6 +98,21 @@ function App() {
       
 }
 
+
+
+function onSort(e) {
+  setSortOrder(e)
+  const sortedGuitars = [...guitars] 
+    if(sortOrder === "asc"){
+    sortedGuitars.sort((a,b) => b.price - a.price)
+  } else {
+    sortedGuitars.sort((a,b) => a.price - b.price)
+  }
+  return setGuitars(sortedGuitars)
+}
+
+
+
     const globalState = { guitars, setGuitars, cart, addToCart, removeFromCart, cartTotal };
 
   return (
@@ -108,7 +124,7 @@ function App() {
             <Route path='/' element= { <Home/> }></Route>
             <Route path='/login' element= { <Login/> }></Route>
             <Route path='/profile' element= { <Profile/> }></Route>
-            <Route path='/gallery' element= { <Gallery searchedItem ={searchedItem} onSearch={onSearch}/> } ></Route>
+            <Route path='/gallery' element= { <Gallery searchedItem ={searchedItem} onSearch={onSearch} onSort={onSort} sortOrder={sortOrder}/> } ></Route>
             <Route path= '/carrito' element= { <Cart/> }></Route>
             <Route path='/publication' element= { <Publication/> }></Route>
             <Route path='/mypublications' element= { <PublicationsList/> }></Route>
