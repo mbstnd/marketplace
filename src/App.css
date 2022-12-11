@@ -431,6 +431,12 @@ main .text-home {
   background-color: var(--light);
 }
 
+.disabled {
+  background-color: #a2d7f5 ;
+  color: var(--primary);
+  pointer-events: none;
+}
+
 /* Fin de los estilos de Publication */
 
 /* Inicio de los estilos de Card */
@@ -481,14 +487,12 @@ main .text-home {
 
 .item-publication {
   list-style-type: none;
-  border-bottom: 1px solid #24739F ;
+  border-bottom: 1px solid #24739F;
+  padding:  0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
-}
-.item-publication p {
-  margin-bottom: 0;
+  width: auto;
 }
 
 .item-publication button {
@@ -500,6 +504,17 @@ main .text-home {
   border-radius: 15px;
   font-size: 0.8rem;
   font-weight: bold;
+}
+
+
+span {
+  font-weight: bold;
+  color: var(--primary);
+  margin: 0 0.5rem;
+}
+
+.bars {
+  color: #24739F ;
 }
 /* Fin de estilos PublicationsList */
 

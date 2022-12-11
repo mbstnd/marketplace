@@ -11,7 +11,7 @@ const PublicationsList = () => {
                 {
                     publicaciones.map((publicacion) => {
                     return(
-                        <li className="item-publication" key={publicacion.id}>🎸{publicacion.nombre} || {publicacion.status} || {publicacion.price} || {publicacion.model}</li>  
+                        <li className="item-publication" key={publicacion.id}>🎸 <span>Vendedor: </span>{publicacion.nombre} <span className="bars">||</span><span>Condición:</span> {publicacion.status} <span className="bars" >||</span> <span>Modelo:</span> {publicacion.model} <span className="bars">||</span> <span>Precio:</span> {publicacion.price} </li>  
                     )
                 }
                 )
