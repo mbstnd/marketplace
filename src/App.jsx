@@ -99,6 +99,8 @@ function App() {
       
 }
 
+
+
 const capturaInput = (e) => {
   e.preventDefault()
   if(!e.target[0].value || !e.target[1].value || !e.target[2].value || !e.target[3].value)
@@ -118,6 +120,7 @@ const capturaInput = (e) => {
   e.target[1].value = ""
   e.target[2].value = ""
   e.target[3].value = ""
+
 }
 
 

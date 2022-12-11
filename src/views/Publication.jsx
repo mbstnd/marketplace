@@ -2,7 +2,7 @@
 
 
 const Publication = ({ submit }) => {
-
+  
    /* const [nombre, setNombre] = useState("")
     const [condicion, setCondicion] = useState("")
     const [precio,setPrecio ] = useState("")
