@@ -44,16 +44,13 @@
   background-position: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   color: var(--light);
-  text-align: center;
 }
 
 .home-header h1 {
   font-size: 55px;
-  margin-bottom: 2rem;
-  padding-right: 80rem;
+  margin: 0 2rem;
   color: lightgoldenrodyellow;
   font-weight: 900;
   text-shadow: 2px 5px #000;
@@ -157,7 +154,7 @@ h2 {
 }
 
 .login-form a {
-  width: 30%;
+  width: 36%;
   font-weight: bold;
 }
 
@@ -169,7 +166,7 @@ h2 {
 .login-form input {
   margin: 0 0 2rem 0;
   height: 2rem;
-  width: 35%;
+  width: 40%;
   border-radius: 5px;
   border: 1px solid gray;
 }
@@ -197,7 +194,7 @@ h2 {
 main .text-home {
   text-align: center;
   font-size: 1.50rem;
-  padding: 3rem;
+  padding: 2rem;
   font-weight: 900;
 }
 
@@ -224,7 +221,7 @@ main .text-home {
 }
 
 .profile-container {
-  height: 80vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -393,8 +390,8 @@ main .text-home {
 .main-publication {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   position: absolute;
   height: 70vh;
   width: 60vw;
@@ -406,6 +403,11 @@ main .text-home {
   box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
 }
 
+.main-publication h3 {
+  font-weight: bold;
+  
+}
+
 .publication-form {
   display: flex;
   flex-direction: column;
@@ -415,7 +417,7 @@ main .text-home {
 }
 
 .publication-section {
-  margin-top: 2rem;
+  margin-top: 1rem;
   width: 50%;
   border-bottom: 1px solid gray;
 }
