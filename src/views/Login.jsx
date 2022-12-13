@@ -25,7 +25,7 @@ const handleClick = (e) => {
                 <form className="login-form">
                     <input type="text" placeholder=" Usuario" name="login-name" value={user} onChange={e=> setUser(e.target.value) }></input>
                     <input type="password" placeholder=" Contraseña" name="login-password" value={password} onChange={e=> setPassword(e.target.value) }></input>
-                    <button className='btn btn-primary' to="/profile" disabled={!validate()} onClick={(e) => handleClick(e)}>Iniciar sesión</button>
+                    <button className='btn-login' to="/profile" disabled={!validate()} onClick={(e) => handleClick(e)}>Iniciar sesión</button>
                 </form>
             </div>
         </div>

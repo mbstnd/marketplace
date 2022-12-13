@@ -183,7 +183,7 @@ h2 {
 
 .btn-login {
   background-color: var(--primary);
-  width: 500px;
+  width: 45%;
   padding: 0.5rem;
   cursor: pointer;
   color: var(--light);
@@ -354,8 +354,9 @@ main .text-home {
 }
 
 
-.main-gallery img {
-  width: 100%;
+.gallery-card {
+  margin-bottom: 0.5rem;
+  width: 70%;
   height: 70%;
 }
 
@@ -403,7 +404,12 @@ main .text-home {
 
 @media only screen and (max-width: 1400px ) {
   .main-gallery {
-    top: 45%;
+    top: 40%;
+  }
+
+  .main-gallery img {
+    margin-top: 0.5rem;
+    width: 50%;
   }
 
   .filtro {
@@ -462,10 +468,36 @@ main .text-home {
   background-color: var(--light);
 }
 
+.btn-publication {
+   
+    margin: 30px;
+    background-color: #24739F;
+    cursor: pointer;
+    color: var(--light);
+    border: none;
+    height: 45px;
+    width: 20%;
+    border-radius: 15px;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: bold;
+  
+}
+
 button:disabled {
-  opacity: 0.8 ;
+  opacity: 0.7 ;
   pointer-events: none;
 }
+
+@media only screen and (max-width: 1400px ) {
+  .main-publication {
+   
+    height: 80vh;
+    width: 60vw;
+    
+  }
+}
+
 
 /* Fin de los estilos de Publication */
 
@@ -529,9 +561,9 @@ button:disabled {
 @media only screen and (max-width: 1400px ) {
 
   .card {
-    
+   
     width: 25%;
-    height: 50%;
+    height: 55%;
    
   }
 
@@ -545,11 +577,6 @@ button:disabled {
     height: 28px;
     width: 25%;
     
-  }
-
-  .main-gallery img {
-    margin-top: 0.5rem;
-    width: 30px;
   }
 
   .buttons{
