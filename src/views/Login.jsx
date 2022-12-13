@@ -1,10 +1,12 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 
 const Login = () => {
 
     const [user, setUser] = useState('')
     const [password, setPassword] = useState('')
+    const [usuarios, setUsuarios] = useState('')
+    const [error, setError] = useState('')
 
     const navigate = useNavigate();
 
@@ -12,10 +14,37 @@ const Login = () => {
     return user.length & password.length
 }
 
+useEffect(() => {
+    getUsers("./user.json")
+},[])
+
+const getUsers = (data) => {
+        
+    fetch(data)
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+        setUsuarios(data)
+          
+    })
+
+    
+}
+
 const handleClick = (e) => {
     e.preventDefault();
     
-    navigate("/profile")
+    const login = usuarios.filter((usuario) => {
+        
+        if(user === usuario.user && password === usuario.password) {
+        localStorage.setItem('token', 'test_token_123456789')
+        navigate("/profile");
+    } else {
+        setError(true)
+    }
+    })
+
+    
 }
 
     return (
@@ -26,6 +55,7 @@ const handleClick = (e) => {
                     <input type="text" placeholder=" Usuario" name="login-name" value={user} onChange={e=> setUser(e.target.value) }></input>
                     <input type="password" placeholder=" Contraseña" name="login-password" value={password} onChange={e=> setPassword(e.target.value) }></input>
                     <button className='btn-login' to="/profile" disabled={!validate()} onClick={(e) => handleClick(e)}>Iniciar sesión</button>
+                    { error && <small>🗙  Usuario o contraseña incorrecta 🗙</small> }
                 </form>
             </div>
         </div>
