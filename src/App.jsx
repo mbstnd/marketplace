@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route, isRouteErrorResponse } from 'react-router-dom'
 import { formatPrice } from './utils/utils.js'
+import  ProtectedRoute  from "./components/ProtectedRoute.jsx"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import  Context  from './context/context.js'
@@ -152,9 +153,15 @@ function onSort(e) {
           <Routes>
             <Route path='/' element= { <Home/> }></Route>
             <Route path='/login' element= { <Login/> }></Route>
-            <Route path='/profile' element= { <Profile/> }></Route>
+            <Route path='/profile' element= { 
+              <ProtectedRoute>
+                <Profile/>
+              </ProtectedRoute> }></Route>
             <Route path='/gallery' element= { <Gallery searchedItem ={searchedItem} onSearch={onSearch} onSort={onSort} sortOrder={sortOrder}/> } ></Route>
-            <Route path= '/carrito' element= { <Cart/> }></Route>
+            <Route path= '/carrito' element= { 
+            <ProtectedRoute>
+              <Cart/>
+            </ProtectedRoute> }></Route>
             <Route path='/publication' element= { <Publication submit={capturaInput}/> }></Route>
             <Route path='/mypublications' element= { <PublicationsList/> }></Route>
             <Route path='/guitar/:id' element= { <Guitar/> }></Route>
