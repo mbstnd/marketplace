@@ -26,6 +26,8 @@ function App() {
   const [prices, setPrices] = useState([])
   const [cart, setCart] = useState([]);
 
+
+
   const addToCart = (item)=>{
     const itemIndex = cart.findIndex((guitar)=> guitar.id === item.id)
     const updateCart = [...cart]
@@ -102,6 +104,7 @@ function App() {
 
 
 const capturaInput = (e) => {
+  console.log("estamos", e)
   e.preventDefault()
   if(!e.target[0].value || !e.target[1].value || !e.target[2].value || !e.target[3].value)
   return
@@ -121,6 +124,7 @@ const capturaInput = (e) => {
   e.target[2].value = ""
   e.target[3].value = ""
 
+ 
 }
 
 
