@@ -433,9 +433,8 @@ main .text-home {
   background-color: var(--light);
 }
 
-.disabled {
-  background-color: #a2d7f5 ;
-  color: var(--primary);
+button:disabled {
+  opacity: 0.8 ;
   pointer-events: none;
 }
 
