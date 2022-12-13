@@ -610,17 +610,27 @@ span {
 
 /* Comienzo de estilos Detalle Guitar */
 
+.guitar-detail {
+  width: 80%;
+  margin: auto;
+  padding: 1rem 0 4rem ;
+  min-height: calc(100vh - 55px);
+}
+
 .detail-guitar {
   display: flex;
-  flex-wrap: wrap;
   box-shadow: var(--shadow);
-  border-radius: 4px;
-  margin-top: 63px;
+  border-radius: 10px;
+  margin-top: 55px;
 }
 
 .image-detail {
-  width: 40%;
-  height: 50rem;
+  width: 600px;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 .image-detail img {
@@ -665,7 +675,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 8rem;
 }
 
 /* Fin de estilos Detalle Guitar */
