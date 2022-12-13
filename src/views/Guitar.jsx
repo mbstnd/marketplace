@@ -16,7 +16,7 @@ const Guitar = () => {
     }, [])
 
     return (
-        <main>
+        <main className="guitar-detail">
             <div className="detail-guitar">
                 <section className="image-detail" style={{backgroundImage: `url(${guitar.img})`}}>
                 </section>
