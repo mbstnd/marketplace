@@ -24,7 +24,6 @@ function App() {
   const [searchedItem, setSearchedItem] = useState("")
   const [sortOrder, setSortOrder] = useState("")
   const [publicaciones, setPublicaciones] = useState([]);
-  const [prices, setPrices] = useState([])
   const [cart, setCart] = useState([]);
 
 
