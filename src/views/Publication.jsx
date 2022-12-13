@@ -1,9 +1,6 @@
 
 import { useState } from "react"
-import  classnames  from "classnames"
 import { useNavigate } from "react-router-dom"
-
-
 
 const Publication = ({ submit }) => {
 const [name, setName] = useState('')
@@ -51,7 +48,7 @@ const handleClick = (e) => {
                 <label>DESCRIPCIÓN</label>
                 <input type="text" placeholder="Agrega una Descripción" value={desc} onChange={e=> setDesc(e.target.value)}></input>
             </div>
-            <button  className={classnames("btn-filter", {["disabled"]: !validate()}) } disabled={!validate()}>Publicar</button>
+            <button  className="btn-filter" disabled={!validate()}>Publicar</button>
         </form>
     </div>
     )
