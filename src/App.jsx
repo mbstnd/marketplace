@@ -149,11 +149,17 @@ function onSort(e) {
               </ProtectedRoute> }></Route>
             <Route path='/gallery' element= { <Gallery searchedItem ={searchedItem} onSearch={onSearch} onSort={onSort} sortOrder={sortOrder}/> } ></Route>
             <Route path= '/carrito' element= { 
-            <ProtectedRoute>
+              <ProtectedRoute>
               <Cart/>
-            </ProtectedRoute> }></Route>
-            <Route path='/publication' element= { <Publication submit={capturaInput}/> }></Route>
-            <Route path='/mypublications' element= { <PublicationsList/> }></Route>
+              </ProtectedRoute> }></Route>
+            <Route path='/publication' element= { 
+                <ProtectedRoute>
+                  <Publication submit={capturaInput}/>
+                </ProtectedRoute>}></Route>
+            <Route path='/mypublications' element= { 
+              <ProtectedRoute>
+                <PublicationsList/>
+              </ProtectedRoute> }></Route>
             <Route path='/guitar/:id' element= { <Guitar/> }></Route>
             <Route path= '/pagar' element= { <Payment/> }></Route>
             <Route path= '/*' element= { <NotFound/> }></Route>

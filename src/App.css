@@ -29,6 +29,18 @@
   gap: 16px;
   font-weight: bold;
 }
+ .main-nav li {
+  color: #fff;
+  font-size: 2rem;
+ }
+
+ .main-nav button {
+  border: none;
+  background-color: var(--primary);
+  color:#fff;
+  font-size: 1.5rem;
+  
+ }
 
 .nav-icons i{
   display: flex;
@@ -183,7 +195,7 @@ h2 {
 
 .btn-login {
   background-color: var(--primary);
-  width: 30%;
+  width: 31%;
   padding: 0.5rem;
   cursor: pointer;
   color: var(--light);
@@ -194,6 +206,7 @@ h2 {
   text-align: center;
   text-decoration: none;
   font-size: 0.85rem;
+  font-weight: bold;
 }
 
 .main-login small {
