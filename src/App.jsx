@@ -16,7 +16,8 @@ import PublicationsList from './views/PublicationsList.jsx'
 import Guitar from './views/Guitar.jsx'
 import Cart from './views/Cart.jsx'
 import Payment from './views/Payment.jsx'
-import NotFound from './views/Notfound.jsx'
+import NotFound from './views/NotFound.jsx'
+import Nav from './components/Nav.jsx'
 
 function App() {  
   const [guitars, setGuitars] = useState([]);
@@ -145,19 +146,23 @@ function onSort(e) {
             <Route path='/login' element= { <Login/> }></Route>
             <Route path='/profile' element= { 
               <ProtectedRoute>
+                <Nav></Nav>
                 <Profile/>
               </ProtectedRoute> }></Route>
             <Route path='/gallery' element= { <Gallery searchedItem ={searchedItem} onSearch={onSearch} onSort={onSort} sortOrder={sortOrder}/> } ></Route>
             <Route path= '/carrito' element= { 
               <ProtectedRoute>
-              <Cart/>
+                <Nav></Nav>
+                <Cart/>
               </ProtectedRoute> }></Route>
             <Route path='/publication' element= { 
                 <ProtectedRoute>
+                  <Nav></Nav>
                   <Publication submit={capturaInput}/>
                 </ProtectedRoute>}></Route>
             <Route path='/mypublications' element= { 
               <ProtectedRoute>
+                <Nav></Nav>
                 <PublicationsList/>
               </ProtectedRoute> }></Route>
             <Route path='/guitar/:id' element= { <Guitar/> }></Route>
