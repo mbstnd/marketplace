@@ -195,7 +195,7 @@ h2 {
 
 .btn-login {
   background-color: var(--primary);
-  width: 30%;
+  width: 31%;
   padding: 0.5rem;
   cursor: pointer;
   color: var(--light);
@@ -206,6 +206,7 @@ h2 {
   text-align: center;
   text-decoration: none;
   font-size: 0.85rem;
+  font-weight: bold;
 }
 
 .main-login small {
