@@ -16,7 +16,7 @@ import PublicationsList from './views/PublicationsList.jsx'
 import Guitar from './views/Guitar.jsx'
 import Cart from './views/Cart.jsx'
 import Payment from './views/Payment.jsx'
-import NotFound from './views/Notfound.jsx'
+import NotFound from './views/NotFound.jsx'
 import Nav from './components/Nav.jsx'
 
 function App() {  
