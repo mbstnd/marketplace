@@ -208,6 +208,10 @@ h2 {
   font-size: 0.85rem;
 }
 
+.main-login small {
+  color: red;
+}
+
 
 /* Fin de los estilos de Login */
 
@@ -307,6 +311,10 @@ main .text-home {
 
 .additional-products h3 {
   font-size: 1rem;
+  font-weight: bold;
+}
+
+.additional-products p {
   font-weight: bold;
 }
 
@@ -534,7 +542,6 @@ button:disabled {
   
 }
 .card-btn {
-  
   background-color: #24739F;
   color: var(--light);
   border: none;
@@ -546,12 +553,10 @@ button:disabled {
 }
 
 .card-btn:hover {
-  
   background-color: #0D6EFD;;
 }
 
 .card-body {
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -565,7 +570,11 @@ button:disabled {
   font-weight: bold;
   color: var(--primary);
   margin-bottom: 1rem;
- 
+}
+
+.card-text {
+  font-weight: bold;
+  color: var(--primary);
 }
 
 
@@ -573,10 +582,8 @@ button:disabled {
 @media only screen and (max-width: 1400px ) {
 
   .card {
-   
     width: 25%;
     height: 55%;
-   
   }
 
   .card-title {
@@ -592,8 +599,7 @@ button:disabled {
   }
 
   .buttons{
-   margin-top: 0.5rem;
-    
+    margin-top: 0.5rem;
   }
 }
 

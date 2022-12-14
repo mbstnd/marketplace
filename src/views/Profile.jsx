@@ -40,7 +40,7 @@ const Profile = () => {
                 <div className="aside-product">
                     <img src="https://cf.shopee.cl/file/eab007df844ad7715561643a3f7fbb71"></img>
                     <p>Pack de cuerdas</p>
-                    <p>$19.980</p>
+                    <p>$9.990</p>
                 </div>  
             </aside>
         </div>
