@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 
-const Login = () => {
+const Login = ({ login }) => {
 
     const [user, setUser] = useState('')
     const [password, setPassword] = useState('')

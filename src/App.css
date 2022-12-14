@@ -29,6 +29,18 @@
   gap: 16px;
   font-weight: bold;
 }
+ .main-nav li {
+  color: #fff;
+  font-size: 2rem;
+ }
+
+ .main-nav button {
+  border: none;
+  background-color: var(--primary);
+  color:#fff;
+  font-size: 1.5rem;
+  
+ }
 
 .nav-icons i{
   display: flex;
