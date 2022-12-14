@@ -33,7 +33,6 @@ function App() {
     const itemIndex = cart.findIndex((guitar)=> guitar.id === item.id)
     const updateCart = [...cart]
 
-    console.log(addToCart)
 
     if (itemIndex === -1) {
       const guitar = {
@@ -76,24 +75,20 @@ function App() {
         getGuitars("./guitar.json")
     },[])
 
-   
   
     const getGuitars = (data) => {
         
         fetch(data)
         .then(res => res.json())
         .then(data => {
-            console.log(data)
             setGuitars(data)
-           setAllGuitars(data)
-            
+            setAllGuitars(data)   
         })
 
         
     }
 
     function onSearch(e) {
-     
     setSearchedItem(e)
     
     const searchedGuitar = allGuitars.filter((guitar) => {
@@ -124,10 +119,7 @@ const capturaInput = (e) => {
   e.target[1].value = ""
   e.target[2].value = ""
   e.target[3].value = ""
-
- 
 }
-
 
 
 function onSort(e) {
@@ -140,7 +132,6 @@ function onSort(e) {
   }
   return setGuitars(sortedGuitars)
 }
-
 
 
     const globalState = { guitars, setGuitars, cart, addToCart, removeFromCart, cartTotal, publicaciones };
