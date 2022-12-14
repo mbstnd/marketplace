@@ -1,4 +1,5 @@
 import { useContext } from "react"
+import { formatPrice } from '../utils/utils.js'
 import Context from "../context/context.js"
 
 const PublicationsList = () => {
@@ -11,7 +12,7 @@ const PublicationsList = () => {
                 {
                     publicaciones.map((publicacion) => {
                     return(
-                        <li className="item-publication" key={publicacion.id}>🎸 <span>Vendedor: </span>{publicacion.nombre} <span className="bars">||</span><span>Condición:</span> {publicacion.status} <span className="bars" >||</span> <span>Modelo:</span> {publicacion.model} <span className="bars">||</span> <span>Precio:</span> {publicacion.price} </li>  
+                        <li className="item-publication" key={publicacion.id}>🎸 <span>Vendedor: </span>{publicacion.nombre} <span className="bars">||</span><span>Condición:</span> {publicacion.status} <span className="bars" >||</span> <span>Modelo:</span> {publicacion.model} <span className="bars">||</span> <span>Precio:</span>$ { formatPrice(publicacion.price) }</li>  
                     )
                 }
                 )
